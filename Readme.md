@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Камиль Рабаданов](https://up.htmlacademy.ru/adaptive/23/user/961685).
-* Наставник: [Павел Возняк](https://htmlacademy.ru/profile/id907403).
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
