@@ -5,37 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon32.png" type="image/x-icon">
   <title>HTML Academy: Пинк</title>
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img src="./img/pink.svg" width="74" height="23" alt="Pink">
-    </a>
-    <nav class="header-nav">
-      <button class="header-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <ul class="header-nav__list">
-        <li class="header-nav__item">
-          Главная
-        </li>
-        <li class="header-nav__item">
-          <a href="catalog.html">Фотографии</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">С приложением Pink мир станет ярче!</h1>
+  <section class="intro">
+    <h1 class="visually-hidden">Сделайте мир ярче с приложением Pink</h1>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img src="./img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
+      </a>
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <span class="header-nav__span">Главная</span>
+          </li>
+          <li class="header-nav__item">
+            <a href="catalog.html">Фотографии</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <section class="advertisement">
+      <h2 class="visually-hidden">Скачайте наше приложение на свой смартфон</h2>
       <div class="advertisement__wrapper">
-        <h2 class="advertisement__title">Взгляните на жизнь иначе!</h2>
+        <p class="advertisement__title">Взгляните на жизнь иначе!</p>
         <div class="advertisement__image">
           <img src="./img/header-phone.png" width="320" height="294" alt="Скачай приложение на смартфон">
         </div>
@@ -82,32 +85,31 @@
         <p class="advertisement__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
+  </section>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">С приложением Pink мир станет ярче!</h1>
     <section class="advantages">
       <h2 class="visually-hidden">С нашим приложением вы не заскучаете!</h2>
       <div class="advantages__wrapper">
         <p class="advantages__text">Устали от серости мегаполиса?
-          Нам есть, что вам
-          предложить!</p>
+          Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <img src="./img/iphone-1.png" width="186" height="382" alt="серое фото на смартфоне">
-            <p class="advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько кликов!</p>
+            <p class="advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <img src="./img/iphone-2.png" width="186" height="382" alt="розовое фото на смартфоне">
-            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-              эффект</p>
+            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <img src="./img/iphone-3.png" width="186" height="382"
               alt="розовое фото на смартфоне с сообщением для новых друзей">
-            <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-              новых
-            </p>
+            <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </div>
@@ -129,8 +131,7 @@
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__about-author">25 лет, водитель трамвая</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                  привычные
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                   серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
@@ -140,8 +141,7 @@
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__about-author">25 лет, водитель трамвая</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                  привычные
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                   серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
@@ -151,8 +151,7 @@
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__about-author">25 лет, водитель трамвая</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                  привычные
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                   серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
@@ -173,15 +172,15 @@
             <tr class="price__rates">
               <th class="price__rates-head"></th>
               <th class="price__rates-head">
-                <span class="price__rates-title">БАЗА</span>
+                <span class="price__rates-title">База</span>
                 <span class="price__rates-span">1,99 USD</span>
               </th>
               <th class="price__rates-head">
-                <span class="price__rates-title">СТАНДАРТ</span>
+                <span class="price__rates-title">Стандарт</span>
                 <span class="price__rates-span">3,99 USD</span>
               </th>
               <th class="price__rates-head">
-                <span class="price__rates-title">АНЛИМ</span>
+                <span class="price__rates-title">Анлим</span>
                 <span class="price__rates-span">9,99 USD</span>
               </th>
             </tr>
@@ -242,8 +241,7 @@
           </li>
           <li class="contacts__item">
             <p class="contacts__text">Приезжайте в гости:</p>
-            <a class="contacts__link" href="#">ул. Большая
-              Конюшенная, 19/8</a>
+            <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
           <li class="contacts__item">
             <p class="contacts__text">Пишите:</p>
