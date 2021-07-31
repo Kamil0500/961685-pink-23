@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon32.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -63,75 +64,78 @@
         </label>
       </div>
 
-      <fieldset class="form-feedback__checkbox">
-        <legend class="form-feedback__legend-checkbox">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="form-feedback__checkbox-list">
-          <li class="form-feedback__checkbox-item">
-            <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="selfie" checked>
-            <label class="form-feedback__label-checkbox" for="selfie">Сделал селфи с акулой</label>
-          </li>
-          <li class="form-feedback__checkbox-item">
-            <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="beach" checked>
-            <label class="form-feedback__label-checkbox" for="beach">Обгорел на пляже</label>
-          </li>
-          <li class="form-feedback__checkbox-item">
-            <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="chucknoris">
-            <label class="form-feedback__label-checkbox" for="chucknoris">Видел Чака Норриса</label>
-          </li>
-          <li class="form-feedback__checkbox-item">
-            <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="souvenirs">
-            <label class="form-feedback__label-checkbox" for="souvenirs">Накупил сувениров</label>
-          </li>
-          <li class="form-feedback__checkbox-item">
-            <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="tower">
-            <label class="form-feedback__label-checkbox" for="tower">Удержал башню</label>
-          </li>
-          <li class="form-feedback__checkbox-item">
-            <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="hotel">
-            <label class="form-feedback__label-checkbox" for="tower">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form-feedback__fieldset">
+        <fieldset class="form-feedback__checkbox">
+          <legend class="form-feedback__legend-checkbox">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="form-feedback__checkbox-list">
+            <li class="form-feedback__checkbox-item">
+              <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="selfie" checked>
+              <label class="form-feedback__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="form-feedback__checkbox-item">
+              <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="beach" checked>
+              <label class="form-feedback__label-checkbox" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="form-feedback__checkbox-item">
+              <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="chucknoris">
+              <label class="form-feedback__label-checkbox" for="chucknoris">Видел Чака Норриса</label>
+            </li>
+            <li class="form-feedback__checkbox-item">
+              <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="souvenirs">
+              <label class="form-feedback__label-checkbox" for="souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="form-feedback__checkbox-item">
+              <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="tower">
+              <label class="form-feedback__label-checkbox" for="tower">Удержал башню</label>
+            </li>
+            <li class="form-feedback__checkbox-item">
+              <input class="form-feedback__checkbox" type="checkbox" name="checkbox" id="hotel">
+              <label class="form-feedback__label-checkbox" for="tower">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="form-feedback__contacts">
         <legend class="form-feedback__legend">Контактная информация</legend>
         <label class="form-feedback__contacts-label">
-          <span class="form-feedback__contacts-phone">Номер телефона</span>
+          <span class="form-feedback__contacts-span">Номер телефона</span>
           <input class="form-feedback__contacts-input" type="text" name="phone" placeholder="Номер, пожалуйста">
         </label>
         <label class="form-feedback__contacts-label">
-          <span class="form-feedback__contacts-mail">Адрес почты</span>
+          <span class="form-feedback__contacts-span">Адрес почты</span>
           <input class="form-feedback__contacts-input" type="text" name="mail" placeholder="Введите почту *">
         </label>
       </fieldset>
 
-      <fieldset class="form-feedback__radio">
-        <legend class="form-feedback__radio-legend">С каким приложением путешествовали?</legend>
-        <ul class="form-feedback__radio-list">
-          <li class="form-feedback__radio-item">
-            <input class="form-feedback__radio-input" type="radio" name="ios" id="ios" checked>
-            <label class="form-feedback__radio-label" for="ios">Pink для iOS</label>
-          </li>
-          <li class="form-feedback__radio-item">
-            <input class="form-feedback__radio-input" type="radio" name="android" id="android">
-            <label class="form-feedback__radio-label" for="android">Pink на Android</label>
-          </li>
-          <li class="form-feedback__radio-item">
-            <input class="form-feedback__radio-input" type="radio" name="windows" id="windows">
-            <label class="form-feedback__radio-label" for="windows">Windows Phone</label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form-feedback__fieldset">
+        <fieldset class="form-feedback__radio">
+          <legend class="form-feedback__radio-legend">С каким приложением путешествовали?</legend>
+          <ul class="form-feedback__radio-list">
+            <li class="form-feedback__radio-item">
+              <input class="form-feedback__radio-input" type="radio" name="ios" id="ios" checked>
+              <label class="form-feedback__radio-label" for="ios">Pink для iOS</label>
+            </li>
+            <li class="form-feedback__radio-item">
+              <input class="form-feedback__radio-input" type="radio" name="android" id="android">
+              <label class="form-feedback__radio-label" for="android">Pink на Android</label>
+            </li>
+            <li class="form-feedback__radio-item">
+              <input class="form-feedback__radio-input" type="radio" name="windows" id="windows">
+              <label class="form-feedback__radio-label" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="form-feedback__textarea">
         <legend class="form-feedback__textarea-legend">Опишите свои эмоции</legend>
         <label class="form-feedback__textarea-label">
-          <textarea class="form-feedback__textarea-comment"
-            name="comments">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="form-feedback__textarea-comment" name="comments">Можно прям в красках, не стесняясь в выражениях</textarea>
         </label>
       </fieldset>
-      <button class="form-feedback__button" type="submit">Отправить форму</button>
-      <p class="form-feedback__text">* — обязательные поля</p>
+      <button class="form-feedback__button" type="submit"><span class="form-feedback__button-span">Отправить форму</span></button>
+      <p class="form-feedback__text"><span class="form-feedback__text-span">*</span>— обязательные поля</p>
     </form>
   </main>
 
