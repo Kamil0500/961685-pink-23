@@ -2,6 +2,22 @@
   background-color: @color-white-smoke;
   padding: 129px 0 49px 0;
   font-family: @font-family-open-sans;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @color-white-smoke;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+    transform: translateY(-98%);
+  }
+}
+
+.price__slider {
   overflow: hidden;
 }
 
