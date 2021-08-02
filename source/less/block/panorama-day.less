@@ -1,6 +1,12 @@
 .panorama-day {
   margin: 0 0 20px 0;
   font-family: @font-family-open-sans;
+  position: relative;
+}
+
+.panorama-day__image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .panorama-day__link {
@@ -14,6 +20,8 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @color-default-white;
+  position: absolute;
+  right: 0;
 }
 
 .panorama-day__figcaption {

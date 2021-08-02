@@ -1,10 +1,15 @@
 .form-feedback {
   font-family: @font-family-open-sans;
-  margin: 0 auto;
+  margin: 0 auto 26px auto;
 }
 
 .form-feedback__name {
-  margin-bottom: 44px;
+  margin: 0 20px 44px 20px;
+}
+
+.form-feedback__label {
+  display: block;
+  margin-bottom: 29px;
 }
 
 .form-feedback__label-span {
@@ -17,17 +22,20 @@
 }
 
 .form-feedback__input {
-  padding: 23px 78px 23px 20px;
+  padding: 23px 70px 23px 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  border: 2px solid @color-whisper;
+  border-radius: 1px;
+  width: 276px;
 }
 
 .form-feedback__fieldset {
   background-color: @color-white-smoke;
   margin: 0 0 42px 0;
-  padding: 42px 20px 55px 20px;
+  padding: 42px 20px 0 20px;
 }
 
 .form-feedback__checkbox {
@@ -63,8 +71,8 @@
 }
 
 .form-feedback__contacts {
-  margin-bottom: 44px;
-  padding: 0 22px;
+  margin: 0;
+  padding: 42px 22px 44px 22px;
   border: none;
 }
 
@@ -75,6 +83,12 @@
   line-height: 30px;
   color: @color-cerise;
   text-transform: uppercase;
+  display: none;
+}
+
+.form-feedback__contacts-label {
+  display: block;
+  margin-bottom: 29px;
 }
 
 .form-feedback__contacts-span {
@@ -127,8 +141,8 @@
 }
 
 .form-feedback__textarea {
-  margin: 0 0 52px 0;
-  padding: 0 22px;
+  margin: 0;
+  padding: 42px 20px 52px 20px;
   border: none;
 }
 
@@ -139,7 +153,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @color-cerise;
-  margin: 22px;
+  margin: 0;
+  text-align: center;
 }
 
 .form-feedback__textarea-comment {
@@ -147,6 +162,7 @@
   height: 197px;
   border: 2px solid @color-whisper;
   border-radius: 1px;
+  padding: 22px 25px 0 20px;
 }
 
 .form-feedback__button {
@@ -156,7 +172,7 @@
   border-radius: 1px;
   padding: 23px 45px;
   cursor: pointer;
-  margin-bottom: 46px;
+  margin: 0 20px 46px 20px;
 }
 
 .form-feedback__button-span {
@@ -165,6 +181,7 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  color: @color-default-white;
 }
 
 .form-feedback__text {
@@ -172,6 +189,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  margin: 0;
+  text-align: center;
 }
 
 .form-feedback__text-span {

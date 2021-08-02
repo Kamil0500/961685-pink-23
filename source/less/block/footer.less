@@ -10,18 +10,34 @@
 
 .footer__social-list {
   display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0 0 41px 0;
 }
 
 .footer__social-item {
   list-style: none;
-  margin-right: 50px;
+  margin-right: 14px;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid @color-midnight-01;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 
 .footer__copyright {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__copyright-text {

@@ -18,19 +18,19 @@
         <img src="./img/pink.svg" width="74" height="23" alt="Pink">
       </a>
       <nav class="header-nav">
-        <button class="header-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        <button class="page-header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a href="index.html" aria-label="Ссылка на главную страницу">Главная</a>
+            <a class="header-nav__link" href="index.html" aria-label="Ссылка на главную страницу">Главная</a>
           </li>
           <li class="header-nav__item">
-            <a href="catalog.html" aria-label="Ссылка на страницу с фотографиями">Фотографии</a>
+            <a class="header-nav__link" href="catalog.html" aria-label="Ссылка на страницу с фотографиями">Фотографии</a>
           </li>
           <li class="header-nav__item">
             <span class="header-nav__span">Конкурс</span>
           </li>
           <li class="header-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="header-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -40,15 +40,11 @@
 
   <main class="page-main">
     <h2 class="visually-hidden">Участвуй в конкурсе с приложением Pink</h2>
-
-    <div class="page-main__wrapper">
       <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть
         ценный приз — 1000 миль на вашу бонусную карту!
         <span class="text-hidden">Пожалуйста, заполните форму ниже:</span></p>
-    </div>
 
     <form class="page-main__form form-feedback" action="https://echo.htmlacademy.ru" method="POST">
-
       <div class="form-feedback__name">
         <label class="form-feedback__label">
           <span class="form-feedback__label-span">Фамилия:</span>
