@@ -1,9 +1,55 @@
 .reviews {
-  padding: 0 20px 60px 20px;
+  padding: 50px 20px 60px 20px;
+  font-family: @font-family-open-sans;
+
+  @media (min-width: @tablet-width) {
+    padding: 109px 20px 50px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 193px 130px 100px 130px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/quotes.svg");
+      top: 72px;
+      right: 560px;
+      width: 79px;
+      height: 63px;
+    }
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/right-arrow.svg");
+      top: 30px;
+      right: 0;
+      width: 22px;
+      height: 41px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/left-arrow.svg");
+      top: 30px;
+      left: 0;
+      width: 22px;
+      height: 41px;
+    }
+  }
 }
 
 .reviews__content {
-  margin: 0 0 44px 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -20,6 +66,18 @@
 .reviews__item {
   list-style: none;
   display: none;
+
+  @media (min-width: @desktop-width) {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+}
+
+.reviews__author-info {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews__item:last-child {
@@ -33,19 +91,47 @@
   line-height: 30px;
   display: block;
   margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .reviews__about-author {
   display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 3;
+    margin: 0;
+  }
 }
 
 .reviews__text {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 51px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .reviews__toggles {
   margin: 0 auto;
   width: 115px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .reviews__toggle {

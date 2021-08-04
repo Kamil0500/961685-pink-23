@@ -1,10 +1,39 @@
 .intro {
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/header-back.png");
   background-color: @color-blue-charcoal;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
   color: @color-default-white;
   font-family: @font-family-open-sans;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/header-background.png");
+    background-color: @color-blue-charcoal;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    color: @color-default-white;
+    font-family: @font-family-open-sans;
+  }
+}
+
+.intro__image {
+  position: absolute;
+  top: 319px;
+  right: 65px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 291px;
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 318px;
+    right: 110px;
+  }
 }
 
 .intro__title {

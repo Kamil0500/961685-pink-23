@@ -5,12 +5,30 @@
   padding: 21px 20px;
   color: @color-default-white;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 20px 43px 20px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 27px 130px 43px 130px;
+    margin-bottom: 98px;
+  }
 }
 
 .page-header__logo {
   height: 100%;
   margin-right: 50px;
   flex-shrink: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    margin-right: 173px;
+    width: 147px;
+    height: 40px;
+  }
 }
 
 .page-header__nav-toggle {
@@ -19,4 +37,16 @@
   right: 20px;
   width: 50px;
   height: 24px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 43px;
+    right: 20px;
+    width: 50px;
+    height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
