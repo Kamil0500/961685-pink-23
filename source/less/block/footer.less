@@ -3,6 +3,9 @@
   font-family: @font-family-open-sans;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 36px 20px 51px 20px;
   }
 
@@ -18,14 +21,6 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-  }
-}
-
-.footer__wrapper {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -51,10 +46,6 @@
 
 .footer__social-item:last-child {
   margin-right: 0;
-
-  @media (min-width: @desktop-width) {
-    margin-right: 0;
-  }
 }
 
 .footer__social-link {

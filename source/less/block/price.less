@@ -1,6 +1,6 @@
 .price {
   background-color: @color-white-smoke;
-  padding: 129px 0 49px 0;
+  padding: 80px 0 100px 0;
   font-family: @font-family-open-sans;
   position: relative;
 
@@ -17,32 +17,27 @@
   }
 }
 
-.price__slider {
+.price__wrapper {
   overflow: hidden;
+}
 
+.price__slider {
   @media (min-width: @tablet-width) {
-    overflow: inherit;
+    width: 100%;
   }
 }
 
 .price__table {
-  background-color: @color-default-white;
   margin-bottom: 45px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto 70px auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0 auto 70px auto;
-  }
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .price__rates-head {
   background-color: @color-midnight;
   color: @color-default-white;
-  border: 2px solid @color-midnight;
-  border-radius: 1px 0 0 0;
+  padding: 19px 95px 19px 35px;
 
   @media (min-width: @tablet-width) {
     padding: 19px 38px 16px 38px;
@@ -63,23 +58,22 @@
 
   @media (min-width: @tablet-width) {
     background: @color-default-white;
-    border: 2px solid @color-whisper;
-    border-radius: 1px 0 0 0;
     display: block;
+  }
+}
+
+.price__rates-side--head {
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
   }
 }
 
 .price__rates-data {
   background: @color-default-white;
-  border: 2px solid @color-whisper;
-  border-radius: 1px 0 0 0;
   padding: 24px 20px 24px 20px;
-  max-width: 276px;
 
   @media (min-width: @tablet-width) {
     background: @color-default-white;
-    border: 2px solid @color-whisper;
-    border-radius: 1px 0 0 0;
   }
 }
 
@@ -90,6 +84,7 @@
   line-height: 30px;
   display: block;
   width: 276px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -103,9 +98,10 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/yes.svg");
+    background-image: url("../img/yes.svg");
     top: 24px;
-    right: 20px;
+    right: 25%;
+    transform: translateX(50px);
     width: 31px;
     height: 21px;
   }
@@ -115,12 +111,9 @@
 
     &::before {
       content: "";
-      position: absolute;
-      background-image: url("../../img/yes.svg");
       top: 19px;
-      left: 60px;
-      width: 31px;
-      height: 21px;
+      left: 0;
+      transform: translateX(60px);
     }
   }
 
@@ -129,12 +122,9 @@
 
     &::before {
       content: "";
-      position: absolute;
-      background-image: url("../../img/yes.svg");
       top: 21px;
-      left: 101px;
-      width: 31px;
-      height: 21px;
+      left: 50%;
+      transform: translateX(-50px);
     }
   }
 }
@@ -145,9 +135,10 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/no.svg");
+    background-image: url("../img/no.svg");
     top: 24px;
-    right: 20px;
+    right: 25%;
+    transform: translateX(50px);
     width: 27px;
     height: 27px;
   }
@@ -157,12 +148,9 @@
 
     &::before {
       content: "";
-      position: absolute;
-      background-image: url("../../img/no.svg");
       top: 19px;
-      left: 60px;
-      width: 27px;
-      height: 27px;
+      left: 0;
+      transform: translateX(60px);
     }
   }
 
@@ -171,12 +159,9 @@
 
     &::before {
       content: "";
-      position: absolute;
-      background-image: url("../../img/no.svg");
       top: 21px;
-      left: 101px;
-      width: 27px;
-      height: 27px;
+      left: 50%;
+      transform: translateX(-50px);
     }
   }
 }
@@ -188,12 +173,8 @@
   line-height: 30px;
   text-transform: uppercase;
   display: block;
-  margin: 19px auto 15px auto;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    margin: 19px auto 15px auto;
-  }
+  margin: 0;
+  padding: 0;
 }
 
 .price__rates-span {
@@ -202,13 +183,6 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  display: block;
-  margin: 0 auto 35px auto;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    margin: 19px auto 15px auto;
-  }
 }
 
 .price__rates-head--side {
@@ -233,8 +207,8 @@
 
 .price__toggle {
   margin-right: 19px;
-}
 
-.price__toggle:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }

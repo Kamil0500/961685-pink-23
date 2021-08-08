@@ -5,11 +5,10 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 40%;
+    grid-template-columns: 50%;
     justify-content: end;
     padding: 102px 20px 30px 20px;
     position: relative;
-    font-family: @font-family-open-sans;
 
     &::before {
       content: "";
@@ -24,19 +23,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-family: @font-family-open-sans;
     background-color: @color-white-smoke;
     position: relative;
-    display: grid;
-    grid-template-columns: 50%;
-    justify-content: end;
     padding: 115px 130px 120px 0;
 
     &::before {
       content: "";
-      position: absolute;
-      background-image: url("../../img/timer.png");
-      background-size: cover;
       width: 298px;
       height: 345px;
       top: 76px;
@@ -54,25 +46,17 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 24px 0;
-    max-width: 160px;
-    font-family: @font-family-open-sans;
-    font-weight: 700;
-    font-size: 30px;
+    max-width: 190px;
     line-height: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    font-family: @font-family-open-sans;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 30px;
     margin: 0 0 37px 0;
   }
 }
 
 .research__text {
   @media (min-width: @tablet-width) {
-    font-family: @font-family-open-sans;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -80,19 +64,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-family: @font-family-open-sans;
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
   }
 }
 
 .research__link {
-  font-family: @font-family-open-sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   color: @color-cerise;
   display: block;
   text-decoration-line: underline;

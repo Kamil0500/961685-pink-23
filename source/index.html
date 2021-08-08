@@ -13,45 +13,41 @@
 <body class="page__body">
   <section class="intro">
     <h1 class="visually-hidden">Сделайте мир ярче с приложением Pink</h1>
-    <picture>
-      <source srcset="./img/header-phone2.png" media(min-width: @tablet-width) width="660" height="545">
-      <img class="intro__image" src="./img/header-phone.png" width="320" height="294"
-      alt="Скачай приложение на смартфон" />
-    </picture>
+
     <header class="page-header">
+      <div class="page-header__wrapper container">
         <a class="page-header__logo" href="#">
-          <picture>
-            <source srcset="img/logo.svg" type="image/svg" media(min-width: @tablet-width) width="145" height="40">
-            <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink" />
-          </picture>
-        </a>
-      </picture>
-      <button class="page-header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <nav class="page-header__nav header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <span class="header-nav__span">Главная</span>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+          <img src="./img/pink.svg" width="74" height="23" alt="Логотип приложения Pink" />
+      </a>
+    </picture>
+    <button class="page-header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+    <nav class="page-header__nav header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <span class="header-nav__span">Главная</span>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="catalog.html">Фотографии</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+      </div>
     </header>
 
     <section class="advertisement">
       <h2 class="visually-hidden">
         Скачайте наше приложение на свой смартфон
       </h2>
-
       <p class="advertisement__title">Взгляните на жизнь иначе!</p>
+
       <section class="advertisement__wrapper">
+          <img class="advertisement__img" src="./img/header-phone.png" width="320" height="286" alt="Pink вашем смартфоне">
           <a class="advertisement__link" href="#">Скачать приложение</a>
           <ul class="advertisement__download download-list">
             <li class="download-list__item">
@@ -107,39 +103,30 @@
         Устали от серости мегаполиса?<span class="advantages__text-span">Нам есть, что вам предложить!</span>
       </p>
       <div class="advantages__wrapper">
-        <ul class="advantages__list">
+        <ul class="advantages__list container">
           <li class="advantages__item">
             <h3 class="advantages__item-title">Поднимает настроение</h3>
             <p class="advantages__item-text">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
-            <picture>
-              <source srcset="./img/iphone-1.png" type="image/png" media(min-width: @desktop-width) width="186" height="382">
-              <img class="advantages__img advantages__img--none" src="./img/iphone-1.png" width="186" height="382"
+              <img class="advantages__img" src="./img/iphone-1.png" width="186" height="382"
               alt="розовое фото на смартфоне с сообщением для новых друзей" />
-            </picture>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
             <p class="advantages__item-text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
-            <picture>
-              <source srcset="./img/iphone-2.png" type="image/png" media(min-width: @desktop-width) width="186" height="382">
-              <img class="advantages__img advantages__img--none" src="./img/iphone-1.png" width="186" height="382"
+              <img class="advantages__img" src="./img/iphone-2.png" width="186" height="382"
               alt="розовое фото на смартфоне с сообщением для новых друзей" />
-            </picture>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__item-title">Заводит новых друзей</h3>
             <p class="advantages__item-text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
-            <picture>
-              <source srcset="./img/iphone-3.png" type="image/png" media(min-width: @desktop-width) width="186" height="382">
-              <img class="advantages__img" src="./img/iphone-1.png" width="157" height="320"
+              <img class="advantages__img advantages__img--none" src="./img/iphone-3.png" width="157" height="320"
               alt="розовое фото на смартфоне с сообщением для новых друзей" />
-            </picture>
           </li>
         </ul>
       </div>
@@ -156,7 +143,7 @@
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей приложением</h2>
-      <div class="reviews__wrapper">
+      <div class="reviews__wrapper container">
         <ul class="reviews__list">
           <li class="reviews__item">
             <blockquote class="reviews__content">
@@ -204,27 +191,27 @@
     </section>
     <section class="price">
       <h2 class="visually-hidden">Прайс</h2>
-      <div class="price__wrapper">
+      <div class="price__wrapper container">
         <div class="price__slider">
           <table class="price__table">
             <tr class="price__rates">
-              <th class="price__rates-side"></th>
+              <th class="price__rates-side price__rates-side--head"></th>
               <th class="price__rates-head">
-                <span class="price__rates-title">База</span>
+                <p class="price__rates-title">База</p>
                 <span class="price__rates-span">1,99 USD</span>
               </th>
               <th class="price__rates-head">
-                <span class="price__rates-title">Стандарт</span>
+                <p class="price__rates-title">Стандарт</p>
                 <span class="price__rates-span">3,99 USD</span>
               </th>
               <th class="price__rates-head">
-                <span class="price__rates-title">Анлим</span>
+                <p class="price__rates-title">Анлим</p>
                 <span class="price__rates-span">9,99 USD</span>
               </th>
             </tr>
             <tr class="price__rates-pink">
-              <th class="price__rates-side price__rates-head--side">
-                Розовый фильтр
+              <th class="price__rates-side">
+                <span>Розовый фильтр</span>
               </th>
               <td class="price__rates-data price__rates-data--true">
                 <span class="price__rates-text">Розовый фильтр</span>
@@ -237,8 +224,8 @@
               </td>
             </tr>
             <tr class="price__rates-smail">
-              <th class="price__rates-side price__rates-head--side">
-                Смайлики
+              <th class="price__rates-side">
+                <span>Смайлики</span>
               </th>
               <td class="price__rates-data price__rates-data--false">
                 <span class="price__rates-text">Смайлики</span>
@@ -251,8 +238,8 @@
               </td>
             </tr>
             <tr class="price__rates-comments">
-              <th class="price__rates-side price__rates-head--side">
-                Комментарии
+              <th class="price__rates-side">
+                <span>Комментарии</span>
               </th>
               <td class="price__rates-data price__rates-data--false">
                 <span class="price__rates-text">Комментарии</span>
@@ -295,14 +282,10 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <picture>
-        <source srcset="./img/logotype-blue.svg" type="image/svg" media(min-width: @desktop-width) width="147" height="40">
+  <footer class="footer container">
         <a class="footer__logo" href="#">
           <img src="./img/logo-footer.svg" width="145" height="40" alt="Логотип приложения Pink" />
         </a>
-      </picture>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a class="footer__social-link" href="#">
@@ -343,7 +326,6 @@
           </svg>
         </a>
       </p>
-    </div>
   </footer>
 </body>
 

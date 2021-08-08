@@ -9,3 +9,14 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
+}

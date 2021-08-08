@@ -15,7 +15,8 @@
       position: absolute;
       background-image: url("../img/quotes.svg");
       top: 72px;
-      right: 560px;
+      left: 50%;
+      transform: translateX(-50px);
       width: 79px;
       height: 63px;
     }
@@ -23,15 +24,23 @@
 }
 
 .reviews__wrapper {
+  @media (min-width: @tablet-width) {
+    max-width: 790px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../../img/right-arrow.svg");
+      background-image: url("../img/right-arrow.svg");
       top: 30px;
       right: 0;
+      transform: translateX(-10px);
       width: 22px;
       height: 41px;
     }
@@ -42,6 +51,7 @@
       background-image: url("../img/left-arrow.svg");
       top: 30px;
       left: 0;
+      transform: translateX(10px);
       width: 22px;
       height: 41px;
     }
@@ -95,9 +105,7 @@
   @media (min-width: @tablet-width) {
     order: 2;
     margin-bottom: 17px;
-    font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
   }
 }
 
@@ -110,12 +118,12 @@
   @media (min-width: @tablet-width) {
     display: block;
     order: 3;
-    margin: 0;
+    margin: 0 auto 49px auto;
   }
 }
 
 .reviews__text {
-  margin: 0;
+  margin: 0 auto 44px auto;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 51px 0;
@@ -127,7 +135,7 @@
 
 .reviews__toggles {
   margin: 0 auto;
-  width: 115px;
+  max-width: 95px;
 
   @media (min-width: @desktop-width) {
     display: none;

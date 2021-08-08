@@ -3,11 +3,13 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 28px 20px 103px 20px;
+    padding: 28px 20px 119px 20px;
+    max-width: 950px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 28px 130px 103px 130px;
+    padding: 16px 16px 130px 16px;
   }
 }
 
@@ -25,16 +27,35 @@
   @media (min-width: @tablet-width) {
     margin: 0 0 39px 24px;
     max-width: 252px;
-    font-weight: 300;
     font-size: 40px;
     line-height: 48px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 0 51px 24px;
-    font-weight: 300;
     font-size: 50px;
     line-height: 68px;
+  }
+}
+
+.advertisement__img {
+  position: absolute;
+  top: 91px;
+  left: 50%;
+  transform: translateX(-160px);
+
+  @media (min-width: @tablet-width) {
+    width: 450px;
+    height: 420px;
+    bottom: 0;
+    transform: translateX(-130px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 710px;
+    height: 645px;
+    top: 40px;
+    transform: translateX(-170px);
   }
 }
 
@@ -42,7 +63,7 @@
   font-family: @font-family-open-sans;
   background-color: @color-blue-charcoal;
   padding: 28px 0 38px 0;
-  margin: 0 auto -6px auto;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -59,7 +80,7 @@
   color: @color-default-white;
   border: 3px solid @color-default-white;
   border-radius: 29px;
-  padding: 21px 38px;
+  padding: 21px 34px;
   margin: 0 auto 32px auto;
   display: flex;
   align-items: center;
@@ -69,14 +90,12 @@
   @media (min-width: @tablet-width) {
     max-width: 300px;
     margin: 0 0 46px 0;
-    padding: 21px 48px;
+    padding: 21px 45px;
   }
 
   @media (min-width: @desktop-width) {
-    font-weight: 700;
     font-size: 21px;
-    line-height: 18px;
-    padding: 20px 32px;
+    padding: 20px 28px;
     margin: 0 0 67px 0;
   }
 }
@@ -91,8 +110,6 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 38px 46px;
-    display: flex;
-    align-items: center;
     justify-content: left;
   }
 
@@ -115,8 +132,6 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     max-width: 308px;
-    font-weight: 300;
     font-size: 18px;
-    line-height: 24px;
   }
 }

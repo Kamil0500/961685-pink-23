@@ -1,20 +1,22 @@
 .page-header {
   background-color: @color-black-03;
-  position: relative;
   margin-bottom: 36px;
-  padding: 21px 20px;
+  padding: 22px 0;
   color: @color-default-white;
-  display: flex;
 
   @media (min-width: @tablet-width) {
-    padding: 27px 20px 43px 20px;
+    padding: 27px 0 43px 0;
     margin-bottom: 74px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 27px 130px 43px 130px;
     margin-bottom: 98px;
   }
+}
+
+.page-header__wrapper {
+  display: flex;
+  position: relative;
 }
 
 .page-header__logo {
@@ -26,25 +28,15 @@
     display: flex;
     align-items: center;
     margin-right: 173px;
-    width: 147px;
-    height: 40px;
   }
 }
 
 .page-header__nav-toggle {
   position: absolute;
-  top: 21px;
+  top: 0;
   right: 20px;
   width: 50px;
   height: 24px;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 43px;
-    right: 20px;
-    width: 50px;
-    height: 24px;
-  }
 
   @media (min-width: @desktop-width) {
     display: none;
