@@ -13,39 +13,41 @@
 <body class="page__body">
   <section class="intro">
     <h1 class="visually-hidden">Сделайте мир ярче с приложением Pink</h1>
+
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink" />
+      <div class="page-header__wrapper container">
+        <a class="page-header__logo" href="#">
+          <img src="./img/pink.svg" width="74" height="23" alt="Логотип приложения Pink" />
       </a>
-      <button class="page-header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      <nav class="page-header__nav header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <span class="header-nav__span">Главная</span>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+    </picture>
+    <button class="page-header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+    <nav class="page-header__nav header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <span class="header-nav__span">Главная</span>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="catalog.html">Фотографии</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+      </div>
     </header>
 
     <section class="advertisement">
       <h2 class="visually-hidden">
         Скачайте наше приложение на свой смартфон
       </h2>
-
       <p class="advertisement__title">Взгляните на жизнь иначе!</p>
-      <img class="advertisement__image" src="./img/header-phone.png" width="320" height="294"
-        alt="Скачай приложение на смартфон" />
+
       <section class="advertisement__wrapper">
-        <div class="advertisement__block-download">
+          <img class="advertisement__img" src="./img/header-phone.png" width="320" height="286" alt="Pink вашем смартфоне">
           <a class="advertisement__link" href="#">Скачать приложение</a>
           <ul class="advertisement__download download-list">
             <li class="download-list__item">
@@ -89,7 +91,6 @@
           <p class="advertisement__text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
-        </div>
       </section>
     </section>
   </section>
@@ -102,25 +103,29 @@
         Устали от серости мегаполиса?<span class="advantages__text-span">Нам есть, что вам предложить!</span>
       </p>
       <div class="advantages__wrapper">
-        <ul class="advantages__list">
+        <ul class="advantages__list container">
           <li class="advantages__item">
             <h3 class="advantages__item-title">Поднимает настроение</h3>
             <p class="advantages__item-text">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
+              <img class="advantages__img" src="./img/iphone-1.png" width="186" height="382"
+              alt="розовое фото на смартфоне с сообщением для новых друзей" />
           </li>
           <li class="advantages__item">
             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
             <p class="advantages__item-text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
+              <img class="advantages__img" src="./img/iphone-2.png" width="186" height="382"
+              alt="розовое фото на смартфоне с сообщением для новых друзей" />
           </li>
           <li class="advantages__item">
             <h3 class="advantages__item-title">Заводит новых друзей</h3>
             <p class="advantages__item-text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
-            <img class="advantages__img" src="./img/iphone-3.png" width="186" height="382"
+              <img class="advantages__img advantages__img--none" src="./img/iphone-3.png" width="157" height="320"
               alt="розовое фото на смартфоне с сообщением для новых друзей" />
           </li>
         </ul>
@@ -138,7 +143,7 @@
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей приложением</h2>
-      <div class="reviews__wrapper">
+      <div class="reviews__wrapper container">
         <ul class="reviews__list">
           <li class="reviews__item">
             <blockquote class="reviews__content">
@@ -186,64 +191,64 @@
     </section>
     <section class="price">
       <h2 class="visually-hidden">Прайс</h2>
-      <div class="price__wrapper">
+      <div class="price__wrapper container">
         <div class="price__slider">
           <table class="price__table">
             <tr class="price__rates">
-              <th class="price__rates-side"></th>
+              <th class="price__rates-side price__rates-side--head"></th>
               <th class="price__rates-head">
-                <span class="price__rates-title">База</span>
+                <p class="price__rates-title">База</p>
                 <span class="price__rates-span">1,99 USD</span>
               </th>
               <th class="price__rates-head">
-                <span class="price__rates-title">Стандарт</span>
+                <p class="price__rates-title">Стандарт</p>
                 <span class="price__rates-span">3,99 USD</span>
               </th>
               <th class="price__rates-head">
-                <span class="price__rates-title">Анлим</span>
+                <p class="price__rates-title">Анлим</p>
                 <span class="price__rates-span">9,99 USD</span>
               </th>
             </tr>
             <tr class="price__rates-pink">
-              <th class="price__rates-side price__rates-head--side">
-                Розовый фильтр
+              <th class="price__rates-side">
+                <span>Розовый фильтр</span>
               </th>
               <td class="price__rates-data price__rates-data--true">
-                <span class="price__rates-side">Розовый фильтр</span>
+                <span class="price__rates-text">Розовый фильтр</span>
               </td>
               <td class="price__rates-data price__rates-data--true">
-                <span class="price__rates-side">Розовый фильтр</span>
+                <span class="price__rates-text">Розовый фильтр</span>
               </td>
               <td class="price__rates-data price__rates-data--true">
-                <span class="price__rates-side">Розовый фильтр</span>
+                <span class="price__rates-text">Розовый фильтр</span>
               </td>
             </tr>
             <tr class="price__rates-smail">
-              <th class="price__rates-side price__rates-head--side">
-                Смайлики
+              <th class="price__rates-side">
+                <span>Смайлики</span>
               </th>
               <td class="price__rates-data price__rates-data--false">
-                <span class="price__rates-side">Смайлики</span>
+                <span class="price__rates-text">Смайлики</span>
               </td>
               <td class="price__rates-data price__rates-data--true">
-                <span class="price__rates-side">Смайлики</span>
+                <span class="price__rates-text">Смайлики</span>
               </td>
               <td class="price__rates-data price__rates-data--true">
-                <span class="price__rates-side">Смайлики</span>
+                <span class="price__rates-text">Смайлики</span>
               </td>
             </tr>
             <tr class="price__rates-comments">
-              <th class="price__rates-side price__rates-head--side">
-                Комментарии
+              <th class="price__rates-side">
+                <span>Комментарии</span>
               </th>
               <td class="price__rates-data price__rates-data--false">
-                <span class="price__rates-side">Комментарии</span>
+                <span class="price__rates-text">Комментарии</span>
               </td>
               <td class="price__rates-data price__rates-data--true">
-                <span class="price__rates-side">Комментарии</span>
+                <span class="price__rates-text">Комментарии</span>
               </td>
               <td class="price__rates-data price__rates-data--true">
-                <span class="price__rates-side">Комментарии</span>
+                <span class="price__rates-text">Комментарии</span>
               </td>
             </tr>
           </table>
@@ -273,21 +278,19 @@
             <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <div class="contacts__map">
-          <img src="./img/map.png" width="1200" height="502" alt="Как нас найти на карте" />
-        </div>
+          <img class="contacts__map" src="./img/map.png" width="1200" height="502" alt="Как нас найти на карте" />
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <a class="footer__logo" href="#">
-        <img src="./img/logo-footer-tablet.svg" width="145" height="40" alt="Логотип приложения Pink" />
-      </a>
+  <footer class="footer container">
+        <a class="footer__logo" href="#">
+          <img src="./img/logo-footer.svg" width="145" height="40" alt="Логотип приложения Pink" />
+        </a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a class="footer__social-link" href="#">
-            <svg class="footer__social-icon" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__social-icon" width="18" height="14" viewBox="0 0 18 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.5641 0.168904C12.2458 -0.0461515 12.9837 -0.0560928 13.6719 0.140507C14.3602 0.337107 14.9633 0.730138 15.3947 1.26319C16.1053 1.05385 16.8055 0.815959 17.5263 0.606617C17.5164 0.925848 17.4299 1.23907 17.2732 1.52372C17.1165 1.80837 16.8935 2.05738 16.6201 2.2528C16.8726 2.27877 17.1281 2.25112 17.3673 2.17197C17.6064 2.09281 17.8228 1.96424 18 1.79606C17.901 2.20987 17.6999 2.59695 17.4123 2.92708C17.1247 3.2572 16.7585 3.52144 16.3421 3.69916C16.095 9.96988 12.9748 14.1662 5.65332 13.9949H5.14874C4.70595 13.9949 0.731121 13.5667 0 12.2441C1.75201 12.4899 3.53888 12.0976 4.98398 11.1498C3.95423 10.8643 2.13158 10.7026 1.82265 8.40934C2.2108 8.54337 2.6321 8.57306 3.03776 8.49498C1.76087 7.70519 0.339817 7.0391 0.422197 4.99327C0.819634 5.29882 1.3269 5.45507 1.84325 5.43098C1.10183 5.20261 -0.24714 2.30989 0.895881 0.825474C2.82151 2.54778 4.86041 4.17493 8.48512 4.3367C8.71167 2.20522 9.68993 0.777896 11.5641 0.168904Z"
                 fill="#D22856" />
@@ -323,7 +326,6 @@
           </svg>
         </a>
       </p>
-    </div>
   </footer>
 </body>
 

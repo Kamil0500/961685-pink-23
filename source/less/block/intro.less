@@ -1,10 +1,33 @@
 .intro {
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/header-back.png");
   background-color: @color-blue-charcoal;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
   color: @color-default-white;
   font-family: @font-family-open-sans;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-header.png");
+  }
+}
+
+.intro__content {
+  position: absolute;
+  top: 310px;
+  left: 50%;
+  transform: translateX(-160px);
+  width: 320px;
+  height: 286px;
+}
+
+.intro__img {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .intro__title {
