@@ -1,19 +1,27 @@
 .panorama-day {
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px auto;
   font-family: @font-family-open-sans;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 50px auto;
+  }
 }
 
 .panorama-day__image {
   min-width: 100vw;
   object-fit: cover;
   margin-left: -22px;
+  max-height: 800px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .panorama-day__link {
   display: block;
   background-color: @color-cerise;
-  max-width: 140px;
   padding: 14px 20px;
   font-style: normal;
   font-weight: 700;
@@ -23,15 +31,36 @@
   color: @color-default-white;
   position: absolute;
   right: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 52px;
+    right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
 }
 
 .panorama-day__figcaption {
   padding: 26px 10px 26px 17px;
   background-color: @color-white-smoke;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+  }
 }
 
 .panorama-day__author {
   margin: 0 0 14px 0;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
 }
 
 .panorama-day__author-name {
@@ -56,7 +85,21 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0 0 25px 0;
-  max-width: 255px;
+}
+
+.panorama-day__button {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: -1;
+  }
+}
+
+.panorama-day__button-like {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    width: 13px;
+    height: 12px;
+  }
 }
 
 .panorama-day__button-count {
@@ -67,4 +110,8 @@
   text-transform: uppercase;
   color: @color-cerise;
   margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 18px;
+  }
 }

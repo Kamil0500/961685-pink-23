@@ -1,6 +1,7 @@
 .page-main {
   background-color: @color-default-white;
   font-family: @font-family-open-sans;
+  overflow-x: hidden;
 }
 
 .page-main__title {
@@ -11,8 +12,17 @@
   max-width: 280px;
   text-align: center;
   margin: 54px auto 55px auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 490px;
+    font-size: 18px;
+  }
 }
 
 .page-main__text-hidden {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

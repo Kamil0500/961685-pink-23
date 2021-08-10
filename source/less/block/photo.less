@@ -1,5 +1,7 @@
 .photo {
   margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo:last-child {
@@ -14,6 +16,9 @@
 .photo__figcaption {
   padding: 26px 31px 26px 17px;
   background-color: @color-white-smoke;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .photo__author {
@@ -45,6 +50,23 @@
   margin: 0 0 25px 0;
 }
 
+.photo__button {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+}
+
+.photo__button-like {
+  @media (min-width: @tablet-width) {
+    width: 13px;
+    height: 12px;
+    order: 1;
+  }
+}
+
 .photo__button-count {
   font-style: normal;
   font-weight: 400;
@@ -53,4 +75,8 @@
   text-transform: uppercase;
   color: @color-cerise;
   margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

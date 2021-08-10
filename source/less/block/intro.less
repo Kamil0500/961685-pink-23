@@ -35,9 +35,20 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  max-width: 316px;
+  max-width: 228px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 0 51px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+  }
 }
 
 .intro__text {
@@ -48,4 +59,11 @@
   max-width: 172px;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 84px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 358px;
+  }
 }
