@@ -16,12 +16,34 @@
 
 .footer__logo {
   display: flex;
+  align-items: baseline;
   justify-content: center;
   margin: 0 auto 41px auto;
+
+  &:hover .footer__logo-pink {
+    fill: @color-cerise;
+  }
+
+  &:active .footer__logo-pink {
+    fill: @color-midnight-03;
+  }
+
+  &:active .footer__logo-glasses {
+    fill: @color-cerise-03;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+}
+
+.footer__logo-glasses {
+  fill: @color-cerise;
+  margin-right: 12px;
+}
+
+.footer__logo-pink {
+  fill: @color-midnight;
 }
 
 .footer__social-list {
@@ -56,6 +78,18 @@
   border-radius: 50%;
   width: 48px;
   height: 48px;
+
+  &:hover {
+    border: 3px solid @color-midnight;
+  }
+
+  &:active {
+    border: 3px solid @color-midnight-01;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .footer__copyright {
@@ -71,4 +105,18 @@
   font-size: 14px;
   line-height: 18px;
   margin-right: 15px;
+}
+
+.footer__copyright-svg {
+  fill: @color-cerise;
+}
+
+.footer__copyright-link {
+  &:hover .footer__copyright-svg {
+    fill: @color-midnight;
+  }
+
+  &:active .footer__copyright-svg {
+    fill: @color-midnight-03;
+  }
 }

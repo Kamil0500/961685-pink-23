@@ -90,6 +90,7 @@
   list-style: none;
   padding: 53px 20px 0 20px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -168,7 +169,9 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     bottom: -30px;
-    left: 20px;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
     width: 268px;
     height: 547px;
   }

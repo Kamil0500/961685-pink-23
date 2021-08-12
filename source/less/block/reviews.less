@@ -33,29 +33,37 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+  }
+}
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/right-arrow.svg");
-      top: 30px;
-      right: 0;
-      transform: translateX(-10px);
-      width: 22px;
-      height: 41px;
-    }
+.reviews__wrapper-btn {
+  display: none;
 
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/left-arrow.svg");
-      top: 30px;
-      left: 0;
-      transform: translateX(10px);
-      width: 22px;
-      height: 41px;
+  @media (min-width: @desktop-width) {
+    display: block;
+    border: none;
+    background-color: transparent;
+
+    &:hover .reviews__wrapper-svg {
+      fill: @color-midnight-06;
     }
   }
+}
+
+.reviews__wrapper-btn--left {
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+
+.reviews__wrapper-btn--right {
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
+.reviews__wrapper-svg {
+  fill: @color-midnight-03;
 }
 
 .reviews__content {
@@ -133,19 +141,51 @@
   }
 }
 
-.reviews__toggles {
+.reviews__inner {
   margin: 0 auto;
   max-width: 95px;
+  background-color: transparent;
+  border: none;
 
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.reviews__toggle {
+.reviews__inner-toggle {
   margin-right: 19px;
-}
+  position: relative;
+  background-color: transparent;
+  border: none;
 
-.reviews__toggle:last-child {
-  margin-right: 0;
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 0 solid @color-midnight;
+    background-color: @color-midnight-03;
+  }
+
+  &:hover::before {
+    background-color: @color-midnight-06;
+  }
+
+  &:active::before {
+    background-color: @color-midnight-01;
+  }
+
+  &--active::before {
+    top: -1px;
+    width: 8px;
+    height: 8px;
+    border: 3px solid @color-midnight;
+    background-color: @color-default-white;
+  }
 }
