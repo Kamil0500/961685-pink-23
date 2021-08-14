@@ -29,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 900px;
+    max-width: 736px;
   }
 
   @media (min-width: @desktop-width) {
@@ -91,4 +91,14 @@
   clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
   max-height: 502px;
   object-fit: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/map-marker.svg");
+    top: auto;
+    width: 36px;
+    height: 36px;
+  }
 }
