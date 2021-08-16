@@ -88,17 +88,37 @@
 }
 
 .panorama-day__button {
+  display: flex;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     display: flex;
+    align-items: baseline;
     order: -1;
   }
 }
 
 .panorama-day__button-like {
+  position: relative;
+  width: 13px;
+  height: 12px;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/heart.svg");
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 12px;
+  }
+
   @media (min-width: @tablet-width) {
     order: 2;
     width: 13px;
     height: 12px;
+    top: -4px;
   }
 }
 
