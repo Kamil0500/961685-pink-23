@@ -21,6 +21,10 @@
   flex-grow: 1;
 }
 
+.photo:last-of-type .photo__figcaption {
+  flex-grow: 0;
+}
+
 .photo__author {
   margin: 0 0 14px 0;
 }
@@ -51,18 +55,32 @@
 }
 
 .photo__button {
+  display: flex;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: auto;
   }
 }
 
 .photo__button-like {
-  @media (min-width: @tablet-width) {
+  width: 13px;
+  height: 12px;
+  position: relative;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/heart.svg");
+    top: 0;
+    left: 0;
     width: 13px;
     height: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
     order: 1;
   }
 }

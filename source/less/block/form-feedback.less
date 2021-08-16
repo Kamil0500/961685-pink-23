@@ -77,6 +77,16 @@
   border: 2px solid @color-whisper;
   border-radius: 1px;
   width: 100%;
+
+  &:hover {
+    border: 2px solid @color-midnight;
+    border-radius: 1px;
+  }
+
+  &:active {
+    border: 2px solid @color-cerise;
+    border-radius: 1px;
+  }
 }
 
 .form-feedback__fieldset-checkbox {
@@ -123,6 +133,8 @@
 }
 
 .form-feedback__input-checkbox {
+  visibility: hidden;
+
   @media (min-width: @tablet-width) {
     margin-left: 60px;
   }
@@ -166,7 +178,46 @@
 }
 
 .form-feedback__label-checkbox {
-  margin-left: 22px;
+  padding-left: 22px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -38px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid @color-whisper;
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+    }
+  }
+
+  &:hover::before {
+    border: 2px solid @color-midnight;
+  }
+
+  &:active::before {
+    border: 2px solid @color-cerise;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 58px;
+  }
+}
+
+.form-feedback__input-checkbox:checked + .form-feedback__label-checkbox::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -3px;
+  left: -38px;
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+  }
 }
 
 .form-feedback__contacts {
@@ -233,6 +284,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 29px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex-direction: column-reverse;
@@ -261,6 +313,28 @@
   width: 100%;
   border: 2px solid @color-whisper;
   border-radius: 1px;
+
+  &:hover {
+    border: 2px solid @color-midnight;
+  }
+
+  &:active {
+    border: 2px solid @color-cerise;
+  }
+}
+
+.form-feedback__contacts-btn {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 60px;
+    height: 62px;
+    border-color: transparent;
+  }
 }
 
 .form-feedback__fieldset-radio {
@@ -346,13 +420,41 @@
 }
 
 .form-feedback__radio-input {
+  visibility: hidden;
+
   @media (min-width: @tablet-width) {
     margin-left: 60px;
   }
 }
 
 .form-feedback__radio-label {
-  margin-left: 31px;
+  padding-left: 31px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -35px;
+    width: 37px;
+    height: 37px;
+    border: 2px solid @color-whisper;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 2px solid @color-midnight;
+  }
+
+  &:active::before {
+    border: 2px solid @color-cerise;
+  }
+}
+
+.form-feedback__radio-input:checked + .form-feedback__radio-label::before {
+  background-image: url("../../img/radio-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-feedback__textarea {
@@ -436,6 +538,14 @@
   cursor: pointer;
   margin: 0 auto 46px;
   max-width: 296px;
+
+  &:hover {
+    background-color: @color-eucalyptus;
+  }
+
+  &:active .form-feedback__button-span {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;

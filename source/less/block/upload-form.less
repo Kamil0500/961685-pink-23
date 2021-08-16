@@ -17,7 +17,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 8px 0 67px 0;
+    padding: 8px 0 0;
+    margin-bottom: 75px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,7 +31,8 @@
   object-fit: cover;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -46,29 +48,91 @@
 
 .upload-form__content {
   display: flex;
+  margin-right: 35px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    align-items: center;
-    margin: 0 22px 51px 49px;
+    align-items: flex-start;
+    margin: 0 22px 21px 49px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 90px 29px 90px;
-    margin: 0 0 29px 0;
+    padding: 0 90px 0 0;
+    margin: 0 0 33px 0;
   }
+}
+
+.upload-form__content:last-of-type {
+  margin-bottom: 0;
 }
 
 .upload-form__btn {
   border: none;
-  margin-right: 35px;
+  padding: 0;
 
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: @tablet-width) {
+    margin-right: 29px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 48px;
   }
+}
+
+.upload-form__btn svg {
+  fill: @color-midnight-03;
+
+  &:hover {
+    fill: @color-midnight-05;
+  }
+
+  &:active {
+    fill: @color-cerise;
+  }
+
+  @media (min-width: @tablet-width) {
+    fill: @color-cerise;
+  }
+}
+
+.upload-form__btn-crop {
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.upload-form__btn-saturation {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.upload-form__btn-contrast {
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.upload-form__btn--active svg {
+  fill: @color-cerise;
 }
 
 .upload-form__range {
@@ -82,8 +146,79 @@
 }
 
 .upload-form__range-input {
+  height: 2px;
+  background-color: @color-midnight;
+  outline: none;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    background-color: @color-default-white;
+    border: 2px solid @color-cerise;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    outline: none;
+    appearance: none;
+  }
+
+  &--active {
+    width: 240px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    margin-bottom: 24px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 288px;
+  }
+}
+
+.upload-form__range--active {
+  display: block;
+  position: absolute;
+  top: 39px;
+  left: -8px;
+
+  &::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    appearance: none;
+    background-color: @color-midnight;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
+}
+
+.upload-form__range-line {
+  height: 2px;
+  width: 320px;
+  background-color: #283645;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  transform: translateX(40px);
+
+  @media (min-width: @tablet-width) {
+    transform: none;
+    left: 0;
+    width: 275px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: -13px;
+    width: 410px;
+  }
+}
+
+.upload-form__content:last-child .upload-form__range-line {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -95,9 +230,11 @@
 .upload-form__buttons {
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 0 0 47px;
+    padding: 0;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -122,9 +259,41 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 24px;
+    max-width: 260px;
+    padding: 21px 80px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 44px 0 90px;
+  }
+}
+
+.upload-form__button--post {
+  color: @color-cerise;
+
+  &:hover {
+    background-color: @color-cerise;
+    color: @color-default-white;
+  }
+
+  &:active {
+    background-color: @color-cerise;
+    color: @color-default-white-03;
+  }
+}
+
+.upload-form__button--reset {
+  color: @color-midnight-01;
+  border-color: @color-midnight-03;
+
+  &:hover {
+    border-color: @color-midnight-03;
+    color: @color-midnight-03;
+  }
+
+  &:active {
+    background-color: @color-midnight-03;
+    border-color: @color-midnight-03;
+    color: @color-default-white-03;
   }
 }
