@@ -1,14 +1,32 @@
 .intro {
-  background-image: url("../img/header-back.png");
+  background-image: url("../img/bg-header/back-mobile.png");
   background-color: @color-blue-charcoal;
   background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
+  background-position: 50% 0;
+  background-size: 100%;
   color: @color-default-white;
   font-family: @font-family-open-sans;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-header/back-mobile@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-header/back-tablet.png");
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-header/back-tablet@2x.png");
+    }
+  }
+
   @media (min-width: @desktop-width) {
-    background-image: url("../img/bg-header.png");
+    background-image: url("../img/bg-header/back-desktop.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-header/back-desktop@2x.png");
+    }
   }
 }
 

@@ -10,9 +10,8 @@
 
 .panorama-day__image {
   min-width: 100vw;
-  object-fit: cover;
   margin-left: -22px;
-  max-height: 800px;
+  max-height: 506px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -53,6 +52,10 @@
     padding: 30px;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 27px;
+  }
 }
 
 .panorama-day__author {
@@ -85,6 +88,10 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0 0 25px 0;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .panorama-day__button {
@@ -107,7 +114,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/heart.svg");
+    background-image: url("../img/svg/heart.svg");
     top: 0;
     left: 0;
     width: 13px;
