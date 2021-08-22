@@ -80,10 +80,10 @@
 }
 
 .upload-form__btn svg {
-  fill: @color-midnight-03;
+  fill: rgba(@color-midnight, 0.3);
 
   &:hover {
-    fill: @color-midnight-05;
+    fill: rgba(@color-midnight, 0.5);
   }
 
   &:active {
@@ -198,7 +198,7 @@
 .upload-form__range-line {
   height: 2px;
   width: 320px;
-  background-color: #283645;
+  background-color: @color-midnight;
   opacity: 0.1;
   position: absolute;
   right: 0;
@@ -278,22 +278,22 @@
 
   &:active {
     background-color: @color-cerise;
-    color: @color-default-white-03;
+    color: rgba(@color-default-white, 0.3);
   }
 }
 
 .upload-form__button--reset {
-  color: @color-midnight-01;
-  border-color: @color-midnight-03;
+  color: rgba(@color-midnight, 0.1);
+  border-color: rgba(@color-midnight, 0.3);
 
   &:hover {
-    border-color: @color-midnight-03;
-    color: @color-midnight-03;
+    border-color: rgba(@color-midnight, 0.3);
+    color: rgba(@color-midnight, 0.3);
   }
 
   &:active {
-    background-color: @color-midnight-03;
-    border-color: @color-midnight-03;
-    color: @color-default-white-03;
+    background-color: rgba(@color-midnight, 0.3);
+    border-color: rgba(@color-midnight, 0.3);
+    color: rgba(@color-default-white, 0.3);
   }
 }

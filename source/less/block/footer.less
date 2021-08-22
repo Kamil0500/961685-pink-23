@@ -20,30 +20,41 @@
   justify-content: center;
   margin: 0 auto 41px auto;
 
-  &:hover .footer__logo-pink {
-    fill: @color-cerise;
-  }
-
-  &:active .footer__logo-pink {
-    fill: @color-midnight-03;
-  }
-
-  &:active .footer__logo-glasses {
-    fill: @color-cerise-03;
-  }
-
   @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
 
-.footer__logo-glasses {
+.footer__logo:hover .footer__logo-pink {
   fill: @color-cerise;
-  margin-right: 12px;
 }
 
-.footer__logo-pink {
+.footer__logo:active .footer__logo-pink {
+  fill: rgba(@color-midnight, 0.3);
+}
+
+.footer__logo-glasses {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo:active .footer__logo-glasses,
+.footer__logo:active .footer__logo-desktop {
+  opacity: 0.3;
+}
+
+.footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.footer__logo-icon {
   fill: @color-midnight;
+  margin-left: 12px;
 }
 
 .footer__social-list {
@@ -74,7 +85,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid @color-midnight-01;
+  border: 3px solid rgba(@color-midnight, 0.1);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -84,7 +95,7 @@
   }
 
   &:active {
-    border: 3px solid @color-midnight-01;
+    border: 3px solid rgba(@color-midnight, 0.1);
   }
 
   &:active svg {
@@ -117,6 +128,6 @@
   }
 
   &:active .footer__copyright-svg {
-    fill: @color-midnight-03;
+    fill: rgba(@color-midnight, 0.3);
   }
 }
