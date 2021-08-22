@@ -25,11 +25,11 @@
   }
 
   &:active .footer__logo-pink {
-    fill: @color-midnight-03;
+    fill: rgba(@color-midnight, 0.3);
   }
 
   &:active .footer__logo-glasses {
-    fill: @color-cerise-03;
+    fill: rgba(@color-cerise, 0.3);
   }
 
   @media (min-width: @tablet-width) {
@@ -74,7 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid @color-midnight-01;
+  border: 3px solid rgba(@color-midnight, 0.1);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -84,7 +84,7 @@
   }
 
   &:active {
-    border: 3px solid @color-midnight-01;
+    border: 3px solid rgba(@color-midnight, 0.1);
   }
 
   &:active svg {
@@ -117,6 +117,6 @@
   }
 
   &:active .footer__copyright-svg {
-    fill: @color-midnight-03;
+    fill: rgba(@color-midnight, 0.3);
   }
 }

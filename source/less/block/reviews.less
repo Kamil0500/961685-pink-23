@@ -13,12 +13,16 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/quotes.svg");
+      background-image: url("../img/svg/quotes.svg");
       top: 72px;
       left: 50%;
       transform: translateX(-50px);
       width: 79px;
       height: 63px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/svg/quotes@2x.svg");
+      }
     }
   }
 }
@@ -45,11 +49,11 @@
     background-color: transparent;
 
     &:hover .reviews__wrapper-svg {
-      fill: @color-midnight-06;
+      fill: rgba(@color-midnight, 0.6);
     }
 
     &:active .reviews__wrapper-svg {
-      fill: @color-midnight-01;
+      fill: rgba(@color-midnight, 0.1);
     }
   }
 }
@@ -67,7 +71,7 @@
 }
 
 .reviews__wrapper-svg {
-  fill: @color-midnight-03;
+  fill: rgba(@color-midnight, 0.3);
 }
 
 .reviews__content {
@@ -174,15 +178,15 @@
     height: 6px;
     border-radius: 50%;
     border: 0 solid @color-midnight;
-    background-color: @color-midnight-03;
+    background-color: rgba(@color-midnight, 0.3);
   }
 
   &:hover::before {
-    background-color: @color-midnight-06;
+    background-color: rgba(@color-midnight, 0.6);
   }
 
   &:active::before {
-    background-color: @color-midnight-01;
+    background-color: rgba(@color-midnight, 0.1);
   }
 
   &--active::before {

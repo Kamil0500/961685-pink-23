@@ -82,13 +82,12 @@
   }
 
   &:active {
-    color: @color-midnight-03;
+    color: rgba(@color-midnight, 0.3);
   }
 }
 
 .contacts__map {
   width: 100%;
-  clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
   max-height: 502px;
   object-fit: cover;
   position: relative;
@@ -96,9 +95,23 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/map-marker.svg");
-    top: auto;
+    background-image: url("../img/svg/map-marker.svg");
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 36px;
     height: 36px;
+    z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/map-marker@2x.svg");
+    }
   }
+}
+
+.contacts__map-img {
+  width: 100%;
+  clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
+  max-height: 502px;
+  object-fit: cover;
 }
