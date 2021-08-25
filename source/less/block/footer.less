@@ -20,30 +20,41 @@
   justify-content: center;
   margin: 0 auto 41px auto;
 
-  &:hover .footer__logo-pink {
-    fill: @color-cerise;
-  }
-
-  &:active .footer__logo-pink {
-    fill: rgba(@color-midnight, 0.3);
-  }
-
-  &:active .footer__logo-glasses {
-    fill: rgba(@color-cerise, 0.3);
-  }
-
   @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
 
-.footer__logo-glasses {
+.footer__logo:hover .footer__logo-icon--pink {
   fill: @color-cerise;
-  margin-right: 12px;
 }
 
-.footer__logo-pink {
+.footer__logo:active .footer__logo-icon--pink {
+  fill: rgba(@color-midnight, 0.3);
+}
+
+.footer__logo-glasses {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo:active .footer__logo-glasses,
+.footer__logo:active .footer__logo-desktop {
+  opacity: 0.3;
+}
+
+.footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.footer__logo-icon {
   fill: @color-midnight;
+  margin-left: 12px;
 }
 
 .footer__social-list {
