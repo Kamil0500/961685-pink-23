@@ -7,13 +7,14 @@
     display: grid;
     grid-template-columns: 50%;
     justify-content: end;
-    padding: 102px 20px 30px 20px;
+    padding: 96px 20px 30px 20px;
     position: relative;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @color-white-smoke;
-    padding: 115px 130px 120px 0;
+    padding: 119px 130px 120px 0;
+    grid-template-columns: 570px;
   }
 }
 
@@ -29,9 +30,9 @@
       background-size: cover;
       width: 238px;
       height: 276px;
-      bottom: 50%;
+      bottom: -26px;
       left: -50%;
-      transform: translate(-55%, 50%);
+      transform: translate(-65%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/timer-tablet@2x.png");
@@ -47,7 +48,7 @@
       height: 345px;
       left: -50%;
       top: -50%;
-      transform: translate(-65%, 5%);
+      transform: translate(-34%, 3%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/timer-desktop@2x.png");
@@ -64,13 +65,13 @@
   color: @color-default-black;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 24px 0;
+    margin: 0 0 10px 0;
     max-width: 190px;
     line-height: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 37px 0;
+    margin: 0 0 24px 0;
     max-width: 100%;
   }
 }
@@ -80,13 +81,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin: 0 0 24px 0;
+    margin: 0 0 12px 0;
     max-width: 534px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 35px;
   }
 }
 
@@ -94,4 +96,8 @@
   color: @color-cerise;
   display: block;
   text-decoration-line: underline;
+
+  @media (min-width: @desktop-width) {
+    letter-spacing: 1px;
+  }
 }
