@@ -20,7 +20,7 @@
   <section class="intro">
     <h1 class="visually-hidden">Выкладывайте свои фото в галерею Pink</h1>
     <header class="page-header">
-      <div class="page-header__wrapper container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <svg class="page-header__logo-icon page-header__logo-desktop" width="61" height="40">
             <use xlink:href="img/sprite/sprite.svg#header-glasses-desktop"></use>
@@ -70,7 +70,6 @@
           <source media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.jpg 1x, ./img/catalog/panorama-tablet@2x.jpg 2x">
           <img class="panorama-day__image" src="./img/catalog/panorama.jpg" width="320" height="137" srcset="./img/catalog/panorama@2x.jpg 2x" alt="Фотопанорама моста">
         </picture>
-        <div class="panorama-day__inner container">
           <figcaption class="panorama-day__figcaption">
             <p class="panorama-day__author">
               <span class="panorama-day__author-name">Анна</span>
@@ -84,7 +83,6 @@
               <span class="panorama-day__button-count">Нравится: 215</span>
             </div>
           </figcaption>
-        </div>
       </figure>
 
       <figure class="photo">
@@ -224,7 +222,6 @@
                 </button>
                 <div class="upload-form__range upload-form__range--active">
                   <input class="upload-form__range-input upload-form__range-input--active" type="range" name="range" min="1" max="100" value="85">
-                  <div class="upload-form__range-line"></div>
                 </div>
               </div>
               <div class="upload-form__content">
@@ -234,8 +231,7 @@
                   </svg>
                 </button>
                 <div class="upload-form__range">
-                  <input class="upload-form__range-input" type="range" name="range" min="1" max="100" value="25">
-                  <div class="upload-form__range-line"></div>
+                  <input class="upload-form__range-input" type="range" name="range" min="1" max="100" value="14">
                 </div>
               </div>
               <div class="upload-form__content">
@@ -246,7 +242,6 @@
                 </button>
                 <div class="upload-form__range">
                   <input class="upload-form__range-input" type="range" name="range" min="1" max="100" value="50">
-                  <div class="upload-form__range-line"></div>
                 </div>
               </div>
             </div>
@@ -261,14 +256,17 @@
   </main>
   <footer class="footer container">
     <a class="footer__logo" href="#">
-      <svg class="footer__logo-desktop" width="60" height="40">
-        <use xlink:href="img/sprite/sprite.svg#glasses-footer-desktop"></use>
+      <svg class="footer__logo-glass1200" width="61" height="40">
+        <use xlink:href="img/sprite/sprite.svg#glass-desktop"></use>
       </svg>
       <svg class="footer__logo-glasses" width="59" height="40">
         <use xlink:href="img/sprite/sprite.svg#glasses-footer"></use>
       </svg>
-      <svg class="footer__logo-icon footer__logo-pink" width="74" height="23">
-        <use xlink:href="img/sprite/sprite.svg#footer-pink"></use>
+      <svg class="footer__logo-pink" width="74" height="23">
+        <use xlink:href="img/sprite/sprite.svg#pink-footer"></use>
+      </svg>
+      <svg class="footer__logo-pink1200" width="75" height="34">
+        <use xlink:href="img/sprite/sprite.svg#footer-pink1200"></use>
       </svg>
     </a>
     <ul class="footer__social-list">

@@ -1,5 +1,5 @@
 .panorama-day {
-  margin: 0 auto 21px auto;
+  margin: 0 auto 20px auto;
   font-family: @font-family-open-sans;
   position: relative;
 
@@ -16,6 +16,7 @@
   min-width: 100vw;
   margin-left: -22px;
   max-height: 509px;
+  object-fit: cover;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -41,7 +42,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 54px;
+    top: 56px;
     right: 130px;
   }
 }
@@ -57,12 +58,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 23px 50px;
+    padding: 23px 30px;
     justify-content: space-between;
+    max-width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 24px 158px;
+    padding: 24px 27px;
+    min-width: 936px;
   }
 }
 

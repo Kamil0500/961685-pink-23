@@ -1,10 +1,13 @@
 .upload-form {
   @media (min-width: @tablet-width) {
     display: flex;
+    max-width: 660px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 72px 20px 88px 80px;
+    padding: 55px 80px 57px 80px;
+    max-width: 100%;
   }
 }
 
@@ -14,15 +17,17 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 0 0;
-    margin-bottom: 70px;
+    padding: 10px 0 0 0;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    margin-bottom: 157px;
   }
 }
 
@@ -31,7 +36,7 @@
   object-fit: cover;
 
   @media (min-width: @tablet-width) {
-    width: 300px;
+    min-width: 300px;
     height: 400px;
   }
 }
@@ -41,10 +46,14 @@
   flex-direction: column;
   align-items: center;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0 48px;
+    width: 41%;
+  }
+
   @media (min-width: @desktop-width) {
-    justify-content: space-between;
-    max-width: 400px;
-    margin-left: 78px;
+    margin: 0 0 0 66px;
+    min-width: 426px;
   }
 }
 
@@ -55,12 +64,33 @@
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
-    margin: 0 7px 22px 48px;
+    margin: 0 0 29px 0;
+    width: 100%;
+    position: relative;
+    padding-bottom: 13px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @color-midnight;
+      opacity: 0.1;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: -2px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin: 0 0 26px 0;
+    margin: 0 0 24px 22px;
+    min-height: 47px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      bottom: -11px;
+    }
   }
 }
 
@@ -74,10 +104,12 @@
 
   @media (min-width: @tablet-width) {
     margin-right: 29px;
+    min-width: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 36px;
+    margin-right: 47px;
+    min-width: 48px;
   }
 }
 
@@ -141,9 +173,28 @@
   margin-top: 39px;
   display: none;
 
+
   @media (min-width: @tablet-width) {
     display: block;
+    min-height: 30px;
+    flex-grow: 1;
     margin: 0;
+    transform: translateY(-5px);
+
+    &::before {
+      width: 276px;
+      right: 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translateY(0);
+
+    &::before {
+      width: 410px;
+      right: 10px;
+      bottom: -20px;
+    }
   }
 }
 
@@ -169,8 +220,9 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 203px;
-    margin-bottom: 32px;
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -193,34 +245,14 @@
   }
 
   @media (min-width: @tablet-width) {
+    top: 7px;
+    left: 95px;
     position: static;
-  }
-}
-
-.upload-form__range-line {
-  height: 2px;
-  width: 320px;
-  background-color: @color-midnight;
-  opacity: 0.1;
-  position: absolute;
-  right: 0;
-  transform: translateX(40px);
-
-  @media (min-width: @tablet-width) {
-    transform: none;
-    left: 0;
-    width: 275px;
+    flex-grow: 1;
   }
 
   @media (min-width: @desktop-width) {
-    bottom: -13px;
-    width: 410px;
-  }
-}
-
-.upload-form__content:last-child .upload-form__range-line {
-  @media (min-width: @desktop-width) {
-    display: none;
+    position: absolute;
   }
 }
 
@@ -236,12 +268,13 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin: 0 auto 0 45px;
+    margin: 0 auto 0 0;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    margin-left: -32px;
+    min-width: 421px;
+    margin: 0;
   }
 }
 
@@ -267,8 +300,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 44px 0 43px;
-    max-width: 183px;
+    margin: 0 44px 0 31px;
+    min-width: 183px;
     padding: 16px 40px;
   }
 }
@@ -289,7 +322,7 @@
 
 .upload-form__button--reset {
   color: rgba(@color-midnight, 0.1);
-  border-color: rgba(@color-midnight, 0.3);
+  border-color: rgba(@color-midnight, 0.1);
 
   &:hover {
     border-color: rgba(@color-midnight, 0.3);
