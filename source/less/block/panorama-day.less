@@ -4,14 +4,19 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto 50px auto;
+    margin: 0 auto 32px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 30px auto;
   }
 }
 
 .panorama-day__image {
   min-width: 100vw;
   margin-left: -22px;
-  max-height: 506px;
+  max-height: 509px;
+  object-fit: cover;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -21,7 +26,7 @@
 .panorama-day__link {
   display: block;
   background-color: @color-cerise;
-  padding: 14px 20px;
+  padding: 5px 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -32,34 +37,41 @@
   right: 0;
 
   @media (min-width: @tablet-width) {
-    top: 52px;
+    top: 57px;
     right: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 54px;
+    top: 56px;
     right: 130px;
   }
 }
 
+.panorama-day__inner {
+  padding: 0;
+}
+
 .panorama-day__figcaption {
-  padding: 26px 10px 26px 17px;
+  padding: 18px 10px 18px 17px;
   background-color: @color-white-smoke;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 23px 30px;
     justify-content: space-between;
+    max-width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 32px 27px;
+    padding: 24px 27px;
+    min-width: 936px;
   }
 }
 
 .panorama-day__author {
-  margin: 0 0 14px 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     order: -1;
@@ -71,7 +83,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  margin-right: 3px;
+  margin-right: 0;
 }
 
 .panorama-day__time {
@@ -87,9 +99,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 25px 0;
+  margin: 0 0 11px 0;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin: 0;
   }
 }

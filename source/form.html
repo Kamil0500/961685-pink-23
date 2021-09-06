@@ -12,7 +12,7 @@
   <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -20,19 +20,19 @@
   <section class="intro">
     <h1 class="visually-hidden">Регистрируйтесь, расскажите свою историю и участвуйте в конкурсе!</h1>
     <header class="page-header">
-      <div class="page-header__wrapper container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <svg class="page-header__logo-icon page-header__logo-desktop" width="61" height="40">
-            <use xlink:href="img/svg/sprite.svg#header-glasses-desktop"></use>
+            <use xlink:href="img/sprite/sprite.svg#header-glasses-desktop"></use>
           </svg>
           <svg class="page-header__logo-icon page-header__logo-pink1200" width="75" height="34">
-            <use xlink:href="img/svg/sprite.svg#pink-desktop"></use>
+            <use xlink:href="img/sprite/sprite.svg#pink-desktop"></use>
           </svg>
           <svg class="page-header__logo-icon page-header__logo-pink" width="74" height="23">
-            <use xlink:href="img/svg/sprite.svg#pink"></use>
+            <use xlink:href="img/sprite/sprite.svg#pink"></use>
           </svg>
           <svg class="page-header__logo-icon page-header__logo-tablet" width="145" height="40">
-            <use xlink:href="img/svg/sprite.svg#logo-header-tablet"></use>
+            <use xlink:href="img/sprite/sprite.svg#logo-header-tablet"></use>
           </svg>
         </a>
     <nav class="page-header__nav header-nav header-nav--closed header-nav--nojs">
@@ -61,157 +61,161 @@
     <h2 class="visually-hidden">Участвуй в конкурсе с приложением Pink</h2>
     <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть
       ценный приз — 1000 миль на вашу бонусную карту!
-      <span class="page-main__text-hidden">Пожалуйста, заполните форму ниже:</span></p>
+      <span class="page-main__text-hidden">Пожалуйста, заполните форму ниже:</span>
+    </p>
 
     <form class="page-main__form form-feedback" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="form-feedback__name container">
-        <label class="form-feedback__label">
-          <span class="form-feedback__label-span">Фамилия:</span>
-          <input class="form-feedback__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
-        </label>
-        <label class="form-feedback__label">
-          <span class="form-feedback__label-span">Имя:</span>
-          <input class="form-feedback__input" type="text" name="name" placeholder="Введите ваше имя *" required>
-        </label>
-        <label class="form-feedback__label">
-          <span class="form-feedback__label-span">Отчество:</span>
-          <input class="form-feedback__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
-        </label>
-      </div>
-
-      <div class="form-feedback__fieldset-checkbox">
-        <fieldset class="form-feedback__checkbox">
-          <legend class="form-feedback__legend-checkbox">
-            <span class="form-feedback__checkbox-title">Ваши безбашенные достижения в путешествии</span>
-          </legend>
-          <ul class="form-feedback__checkbox-list container">
-            <li class="form-feedback__checkbox-item">
-              <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="selfie" checked>
-              <label class="form-feedback__label-checkbox" for="selfie">Сделал селфи с акулой</label>
-            </li>
-            <li class="form-feedback__checkbox-item">
-              <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="beach" checked>
-              <label class="form-feedback__label-checkbox" for="beach">Обгорел на пляже</label>
-            </li>
-            <li class="form-feedback__checkbox-item">
-              <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="chucknoris">
-              <label class="form-feedback__label-checkbox" for="chucknoris">Видел Чака Норриса</label>
-            </li>
-            <li class="form-feedback__checkbox-item">
-              <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="souvenirs">
-              <label class="form-feedback__label-checkbox" for="souvenirs">Накупил сувениров</label>
-            </li>
-            <li class="form-feedback__checkbox-item">
-              <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="tower" checked>
-              <label class="form-feedback__label-checkbox" for="tower">Удержал башню</label>
-            </li>
-            <li class="form-feedback__checkbox-item">
-              <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="hotel">
-              <label class="form-feedback__label-checkbox" for="hotel">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-
-      <div class="form-feedback__contacts">
-        <fieldset class="form-feedback__fieldset-contacts">
-          <legend class="form-feedback__legend">
-            <span class="form-feedback__contacts-title">Контактная информация</span>
-          </legend>
-          <label class="form-feedback__contacts-label">
-            <span class="form-feedback__contacts-span">Номер телефона</span>
-            <input class="form-feedback__contacts-input" type="text" name="phone" placeholder="Номер, пожалуйста">
-            <button class="form-feedback__contacts-btn" type="button">
-              <svg width="20" height="19" viewBox="0 0 20 19">
-                <use xlink:href="img/svg/sprite.svg#phone-icon"></use>
-              </svg>
-            </button>
+        <div class="form-feedback__name container">
+          <label class="form-feedback__label">
+            <span class="form-feedback__label-span">Фамилия:</span>
+            <input class="form-feedback__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
           </label>
-          <label class="form-feedback__contacts-label">
-            <span class="form-feedback__contacts-span">Адрес почты</span>
-            <input class="form-feedback__contacts-input" type="text" name="mail" placeholder="Введите почту *">
-            <button class="form-feedback__contacts-btn form-feedback__contacts-btn--mail" type="button">
-              <svg width="18" height="13" viewBox="0 0 18 13">
-                <use xlink:href="img/svg/sprite.svg#mail-icon"></use>
-              </svg>
-            </button>
+          <label class="form-feedback__label">
+            <span class="form-feedback__label-span">Имя:</span>
+            <input class="form-feedback__input" type="text" name="name" placeholder="Введите ваше имя *" required>
           </label>
-        </fieldset>
-      </div>
-
-      <div class="form-feedback__fieldset-radio">
-        <fieldset class="form-feedback__radio">
-          <legend class="form-feedback__radio-legend">
-            <span class="form-feedback__legend-title">С каким приложением путешествовали?</span>
-          </legend>
-          <ul class="form-feedback__radio-list container">
-            <li class="form-feedback__radio-item">
-              <input class="form-feedback__radio-input" type="radio" name="ios" id="ios" checked>
-              <label class="form-feedback__radio-label" for="ios">Pink для iOS</label>
-            </li>
-            <li class="form-feedback__radio-item">
-              <input class="form-feedback__radio-input" type="radio" name="android" id="android">
-              <label class="form-feedback__radio-label" for="android">Pink на Android</label>
-            </li>
-            <li class="form-feedback__radio-item">
-              <input class="form-feedback__radio-input" type="radio" name="windows" id="windows">
-              <label class="form-feedback__radio-label" for="windows">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-
-      <div class="form-feedback__textarea">
-        <fieldset class="form-feedback__fieldset-textarea">
-          <legend class="form-feedback__textarea-legend">
-            <span class="form-feedback__textarea-title">Опишите свои эмоции</span>
-          </legend>
-          <label class="form-feedback__textarea-label">
-            <textarea class="form-feedback__textarea-comment"
-              name="comments">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <label class="form-feedback__label">
+            <span class="form-feedback__label-span">Отчество:</span>
+            <input class="form-feedback__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
           </label>
-        </fieldset>
-      </div>
+        </div>
 
-      <div class="form-feedback__footer container">
-        <button class="form-feedback__button" type="submit"><span class="form-feedback__button-span">Отправить
-          форму</span></button>
-      <p class="form-feedback__text"><span class="form-feedback__text-span">*</span> — обязательные <span class="form-feedback__text-desktop"> для заполнения </span> поля</p>
-      </div>
+        <div class="form-feedback__fieldset-checkbox">
+          <fieldset class="form-feedback__checkbox">
+            <legend class="form-feedback__legend-checkbox">
+              <span class="form-feedback__checkbox-title">Ваши безбашенные достижения в путешествии</span>
+            </legend>
+            <ul class="form-feedback__checkbox-list">
+              <li class="form-feedback__checkbox-item">
+                <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="selfie" checked>
+                <label class="form-feedback__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="form-feedback__checkbox-item">
+                <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="beach" checked>
+                <label class="form-feedback__label-checkbox" for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="form-feedback__checkbox-item">
+                <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="chucknoris">
+                <label class="form-feedback__label-checkbox" for="chucknoris">Видел Чака Норриса</label>
+              </li>
+              <li class="form-feedback__checkbox-item">
+                <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="souvenirs">
+                <label class="form-feedback__label-checkbox" for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="form-feedback__checkbox-item">
+                <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="tower" checked>
+                <label class="form-feedback__label-checkbox" for="tower">Удержал башню</label>
+              </li>
+              <li class="form-feedback__checkbox-item">
+                <input class="form-feedback__input-checkbox" type="checkbox" name="checkbox" id="hotel">
+                <label class="form-feedback__label-checkbox" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="form-feedback__contacts">
+          <fieldset class="form-feedback__fieldset-contacts">
+            <legend class="form-feedback__legend">
+              <span class="form-feedback__contacts-title">Контактная информация</span>
+            </legend>
+            <label class="form-feedback__contacts-label">
+              <span class="form-feedback__contacts-span">Номер телефона</span>
+              <input class="form-feedback__contacts-input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <button class="form-feedback__contacts-btn" type="button">
+                <svg width="20" height="19" viewBox="0 0 20 19">
+                  <use xlink:href="img/sprite/sprite.svg#phone-icon"></use>
+                </svg>
+              </button>
+            </label>
+            <label class="form-feedback__contacts-label">
+              <span class="form-feedback__contacts-span">Адрес почты</span>
+              <input class="form-feedback__contacts-input" type="email" name="mail" placeholder="Введите почту *">
+              <button class="form-feedback__contacts-btn form-feedback__contacts-btn--mail" type="button">
+                <svg width="18" height="13" viewBox="0 0 18 13">
+                  <use xlink:href="img/sprite/sprite.svg#mail-icon"></use>
+                </svg>
+              </button>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-feedback__fieldset-radio">
+          <fieldset class="form-feedback__radio">
+            <legend class="form-feedback__radio-legend">
+              <span class="form-feedback__legend-title">С каким приложением путешествовали?</span>
+            </legend>
+            <ul class="form-feedback__radio-list container">
+              <li class="form-feedback__radio-item">
+                <input class="form-feedback__radio-input" type="radio" name="ios" id="ios" checked>
+                <label class="form-feedback__radio-label" for="ios">Pink для iOS</label>
+              </li>
+              <li class="form-feedback__radio-item">
+                <input class="form-feedback__radio-input" type="radio" name="android" id="android">
+                <label class="form-feedback__radio-label" for="android">Pink на Android</label>
+              </li>
+              <li class="form-feedback__radio-item">
+                <input class="form-feedback__radio-input" type="radio" name="windows" id="windows">
+                <label class="form-feedback__radio-label" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="form-feedback__textarea">
+          <fieldset class="form-feedback__fieldset-textarea">
+            <legend class="form-feedback__textarea-legend">
+              <span class="form-feedback__textarea-title">Опишите свои эмоции</span>
+            </legend>
+            <label class="form-feedback__textarea-label">
+              <textarea class="form-feedback__textarea-comment"
+                name="comments">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-feedback__footer container">
+          <button class="form-feedback__button" type="submit"><span class="form-feedback__button-span">Отправить
+            форму</span></button>
+        <p class="form-feedback__text"><span class="form-feedback__text-span">*</span> — обязательные <span class="form-feedback__text-desktop"> для заполнения </span> поля</p>
+        </div>
     </form>
   </main>
 
   <footer class="footer container">
     <a class="footer__logo" href="#">
-      <svg class="footer__logo-desktop" width="60" height="40">
-        <use xlink:href="img/svg/sprite.svg#glasses-footer-desktop"></use>
+      <svg class="footer__logo-glass1200" width="61" height="40">
+        <use xlink:href="img/sprite/sprite.svg#glass-desktop"></use>
       </svg>
       <svg class="footer__logo-glasses" width="59" height="40">
-        <use xlink:href="img/svg/sprite.svg#glasses-footer"></use>
+        <use xlink:href="img/sprite/sprite.svg#glasses-footer"></use>
       </svg>
-      <svg class="footer__logo-icon footer__logo-pink" width="74" height="23">
-        <use xlink:href="img/svg/sprite.svg#footer-pink"></use>
+      <svg class="footer__logo-pink" width="74" height="23">
+        <use xlink:href="img/sprite/sprite.svg#pink-footer"></use>
+      </svg>
+      <svg class="footer__logo-pink1200" width="75" height="34">
+        <use xlink:href="img/sprite/sprite.svg#footer-pink1200"></use>
       </svg>
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
         <a class="footer__social-link" href="#">
           <svg width="18" height="14">
-            <use xlink:href="img/svg/sprite.svg#twitter"></use>
+            <use xlink:href="img/sprite/sprite.svg#twitter"></use>
           </svg>
         </a>
       </li>
       <li class="footer__social-item">
         <a class="footer__social-link" href="#">
           <svg width="9" height="18">
-            <use xlink:href="img/svg/sprite.svg#facebook"></use>
+            <use xlink:href="img/sprite/sprite.svg#facebook"></use>
           </svg>
         </a>
       </li>
       <li class="footer__social-item">
         <a class="footer__social-link" href="#">
           <svg width="15" height="13">
-            <use xlink:href="img/svg/sprite.svg#youtube"></use>
+            <use xlink:href="img/sprite/sprite.svg#youtube"></use>
           </svg>
         </a>
       </li>
@@ -220,12 +224,33 @@
       <span class="footer__copyright-text">Разработано</span>
       <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="footer__copyright-svg" width="27" height="34">
-          <use xlink:href="img/svg/sprite.svg#html-academy"></use>
+          <use xlink:href="img/sprite/sprite.svg#html-academy"></use>
         </svg>
       </a>
     </p>
   </footer>
-  <script src="./js/script.js"></script>
+
+<!--
+  <section class="error">
+    <h1 class="error__title">Что-то пошло не так!</h1>
+    <p class="error__text">Проверьте поля, выделенные красным,
+      скорее всего вы забыли их заполнить</p>
+      <div class="error__inner">
+        <button class="error__inner-button" type="button">ok</button>
+      </div>
+  </section>
+
+  <section class="accepted">
+    <h1 class="accepted__title">Ваша заявка отправлена</h1>
+    <p class="accepted__text">Спасибо за ваше участие, ваша заявка
+      уже поступила к нам. В ближайшее
+      время мы рассмотрим ее и
+      оповестим вас.</p>
+      <div class="accepted__inner">
+        <button class="accepted__inner-button" type="button">закрыть окно</button>
+      </div>
+  </section> -->
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

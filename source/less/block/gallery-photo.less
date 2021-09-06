@@ -1,5 +1,5 @@
 .gallery-photo {
-  padding-top: 54px;
+  padding-top: 45px;
   font-family: @font-family-open-sans;
 
   @media (min-width: @tablet-width) {
@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    padding-top: 92px;
   }
 }
 
@@ -17,10 +18,16 @@
   line-height: 30px;
   max-width: 252px;
   text-align: center;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 50px auto;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     max-width: 470px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 572px;
+    margin-bottom: 68px;
   }
 }

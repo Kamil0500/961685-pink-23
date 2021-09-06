@@ -13,7 +13,6 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/background/back-tablet.png");
-    background-size: 100% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/back-tablet@2x.png");
@@ -56,16 +55,18 @@
   max-width: 228px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 0 51px 0;
+  padding: 7px 0 42px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
     max-width: 620px;
+    padding: 9px 0 60px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 800px;
+    padding: 0 0 92px;
   }
 }
 
@@ -77,11 +78,19 @@
   max-width: 172px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 84px;
+  padding-bottom: 76px;
+  padding-top: 6px;
 
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
     max-width: 358px;
+    padding-bottom: 130px;
+    padding-top: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 87px;
+    padding-top: 4px;
   }
 }

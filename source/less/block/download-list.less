@@ -1,5 +1,14 @@
 .download-list {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .download-list__item {
