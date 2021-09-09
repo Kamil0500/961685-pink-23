@@ -249,6 +249,7 @@
     width: 37px;
     height: 37px;
     border: 2px solid @color-whisper;
+    background-color: @color-default-white;
 
     @media (min-width: @tablet-width) {
       left: -36px;
@@ -281,12 +282,9 @@
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: @color-default-white;
   top: -6px;
   left: -32px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/svg/tick@2x.svg");
-  }
 
   @media (min-width: @tablet-width) {
     top: -6px;
@@ -325,6 +323,7 @@
     border-radius: 1px;
     padding: 32px 58px 0;
     margin-bottom: 18px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -429,8 +428,8 @@
   @media (min-width: @tablet-width) {
     display: block;
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 34px;
+    right: 60px;
     width: 58px;
     height: 58px;
     border: none;
@@ -439,7 +438,21 @@
 
   @media (min-width: @desktop-width) {
     top: 31px;
-    right: 3px;
+    left: 50%;
+    transform: translateX(-96px);
+  }
+}
+
+.form-feedback__contacts-btn--mail {
+  @media (min-width: @tablet-width) {
+    top: 165px;
+    right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 31px;
+    left: 88%;
+    transform: translateX(-4px);
   }
 }
 
@@ -591,10 +604,6 @@
   background-image: url("../img/svg/radio-small.svg");
   background-repeat: no-repeat;
   background-position: center;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/svg/radio-small@2x.svg");
-  }
 }
 
 .form-feedback__textarea {
@@ -703,6 +712,13 @@
 
   &:active .form-feedback__button-span {
     opacity: 0.3;
+  }
+
+  &:disabled {
+    background: @color-whisper;
+    border: 2px solid @color-whisper;
+    border-radius: 1px;
+    opacity: 1;
   }
 
   @media (min-width: @tablet-width) {
