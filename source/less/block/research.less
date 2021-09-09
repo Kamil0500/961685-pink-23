@@ -13,7 +13,7 @@
 
   @media (min-width: @desktop-width) {
     background-color: @color-white-smoke;
-    padding: 119px 0 120px 0;
+    padding: 119px 0 112px 0;
     grid-template-columns: 570px;
     max-width: 940px;
     margin: 0 auto;
@@ -32,7 +32,7 @@
       background-size: cover;
       width: 238px;
       height: 276px;
-      bottom: -26px;
+      bottom: -20px;
       left: 0;
       transform: translate(-130%);
 
@@ -50,7 +50,7 @@
       height: 345px;
       left: -50%;
       top: -50%;
-      transform: translate(-34%, 3%);
+      transform: translate(-34%, 4%);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/timer-desktop@2x.png");
@@ -73,7 +73,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 24px 0;
+    margin: 0 0 23px 0;
     max-width: 100%;
   }
 }
@@ -90,8 +90,16 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     max-width: 534px;
+  }
+}
+
+.research__text br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -99,8 +107,13 @@
   color: @color-cerise;
   display: block;
   text-decoration-line: underline;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 
   @media (min-width: @desktop-width) {
     letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 30px;
   }
 }

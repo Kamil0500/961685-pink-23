@@ -129,36 +129,18 @@
 
 .contacts__map {
   width: 100%;
-  max-height: 502px;
+  height: 200px;
   object-fit: cover;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/svg/map-marker.svg");
-    top: 48%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 36px;
-    height: 36px;
-    z-index: 1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/svg/map-marker@2x.svg");
-    }
-  }
+  background-color: @color-white-smoke;
+  clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
 
   @media (min-width: @tablet-width) {
-    &::before {
-      top: 53%;
-    }
+    height: 374px;
   }
 
   @media (min-width: @desktop-width) {
-    &::before {
-      top: 53%;
-    }
+    height: 502px;
   }
 }
 

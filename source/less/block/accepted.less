@@ -19,7 +19,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 780px;
-    transform: translate(-50%, 113%);
+    transform: translate(-50%, 145%);
     padding-top: 50px;
   }
 }
@@ -89,6 +89,14 @@
   color: @color-default-white;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  &:hover {
+    background-color: @color-eucalyptus;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     width: 299px;
