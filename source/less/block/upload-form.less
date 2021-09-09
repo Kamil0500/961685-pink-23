@@ -114,18 +114,17 @@
 }
 
 .upload-form__btn svg {
-  fill: rgba(@color-midnight, 0.3);
+  fill: @color-midnight;
+  opacity: 0.3;
 
   &:hover {
-    fill: rgba(@color-midnight, 0.5);
+    fill: @color-midnight;
+    opacity: 0.5;
   }
 
   &:active {
     fill: @color-cerise;
-  }
-
-  @media (min-width: @tablet-width) {
-    fill: @color-cerise;
+    opacity: 1;
   }
 }
 
@@ -167,6 +166,12 @@
 
 .upload-form__btn--active svg {
   fill: @color-cerise;
+  opacity: 1;
+
+  @media (min-width: @tablet-width) {
+    fill: @color-midnight;
+    opacity: 0.3;
+  }
 }
 
 .upload-form__range {
@@ -212,6 +217,11 @@
     height: 14px;
     outline: none;
     appearance: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @color-cerise;
+    }
   }
 
   &--active {
