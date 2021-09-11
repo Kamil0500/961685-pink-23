@@ -120,10 +120,12 @@
 
   &:hover {
     color: @color-midnight;
+    text-decoration: underline;
   }
 
   &:active {
     color: rgba(@color-midnight, 0.3);
+    text-decoration: none;
   }
 }
 
@@ -132,8 +134,10 @@
   height: 200px;
   object-fit: cover;
   position: relative;
+  overflow: hidden;
   background-color: @color-white-smoke;
   clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     height: 374px;
@@ -145,8 +149,11 @@
 }
 
 .contacts__map-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
-  max-height: 502px;
+  height: 100%;
   object-fit: cover;
+  z-index: -1;
 }

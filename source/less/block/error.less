@@ -1,4 +1,5 @@
 .error {
+  display: none;
   max-width: 320px;
   background: @color-default-white;
   box-shadow: 0 7px 15px rgba(@color-default-black, 0.15);
@@ -6,20 +7,20 @@
   font-family: @font-family-open-sans;
   font-style: normal;
   padding: 45px 20px 50px;
-  position: absolute;
-  bottom: -50%;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 165%);
+  transform: translate(-50%, -50%);
 
   @media (min-width: @tablet-width) {
     max-width: 460px;
     padding: 45px 82px 53px;
-    transform: translate(-50%, 82%);
+    transform: translate(-50%, -50%);
   }
 
   @media (min-width: @desktop-width) {
     max-width: 780px;
-    transform: translate(-50%, 27%);
+    transform: translate(-50%, -50%);
     padding: 54px 0 0;
   }
 }
@@ -94,4 +95,8 @@
     width: 298px;
     padding: 15px 130px;
   }
+}
+
+.error--open {
+  display: block;
 }

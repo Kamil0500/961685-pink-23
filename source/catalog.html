@@ -4,12 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Проект пинк">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
   <link rel="manifest" href="./favicon/site.webmanifest" crossorigin="use-credentials">
   <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
@@ -21,17 +25,17 @@
     <h1 class="visually-hidden">Выкладывайте свои фото в галерею Pink</h1>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <svg class="page-header__logo-icon page-header__logo-desktop" width="61" height="40">
+        <a class="page-header__logo" href="index.html" aria-label="переход на главную страницу">
+          <svg class="page-header__logo-icon page-header__logo--desktop" width="61" height="40">
             <use xlink:href="img/sprite/sprite.svg#header-glasses-desktop"></use>
           </svg>
-          <svg class="page-header__logo-icon page-header__logo-pink1200" width="75" height="34">
+          <svg class="page-header__logo-icon page-header__logo--pink1200" width="75" height="34">
             <use xlink:href="img/sprite/sprite.svg#pink-desktop"></use>
           </svg>
-          <svg class="page-header__logo-icon page-header__logo-pink" width="74" height="23">
+          <svg class="page-header__logo-icon page-header__logo--pink" width="74" height="23">
             <use xlink:href="img/sprite/sprite.svg#pink"></use>
           </svg>
-          <svg class="page-header__logo-icon page-header__logo-tablet" width="145" height="40">
+          <svg class="page-header__logo-icon page-header__logo--tablet" width="145" height="40">
             <use xlink:href="img/sprite/sprite.svg#logo-header-tablet"></use>
           </svg>
         </a>
@@ -65,8 +69,12 @@
 
       <figure class="panorama-day">
         <span class="panorama-day__link">Панорама Дня</span>
-        <a href="./img/catalog/panorama-desktop.jpg">
+        <a href="./img/catalog/panorama-desktop.jpg" aria-label="панорамам моста">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/panorama-desktop.webp 1x, ./img/catalog/panorama-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.webp 1x, ./img/catalog/panorama-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/panorama.webp 1x, ./img/catalog/panorama@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/panorama-desktop.jpg 1x, ./img/catalog/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.jpg 1x, ./img/catalog/panorama-tablet@2x.jpg 2x">
           <img class="panorama-day__image" src="./img/catalog/panorama.jpg" width="320" height="137" srcset="./img/catalog/panorama@2x.jpg 2x" alt="Фотопанорама моста">
@@ -88,8 +96,12 @@
       </figure>
 
       <figure class="photo">
-        <a href="./img/catalog/photo-1-desktop.jpg">
+        <a href="./img/catalog/photo-1-desktop.jpg" aria-label="посмотреть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.webp 1x, ./img/catalog/photo-1-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/photo-1-tablet.webp 1x, ./img/catalog/photo-1-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/photo-1-mobile.webp 1x, ./img/catalog/photo-1-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.jpg 1x, ./img/catalog/photo-1-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/photo-1-tablet.jpg 1x, ./img/catalog/photo-1-tablet@2x.jpg 2x">
           <img class="photo__image" src="./img/catalog/photo-1-mobile.jpg" width="280" height="180" srcset="./img/catalog/photo-1-mobile@2x.jpg 2x" alt="фото белого автомобиля">
@@ -109,8 +121,12 @@
       </figure>
 
       <figure class="photo">
-        <a href="./img/catalog/photo-2-desktop.jpg">
+        <a href="./img/catalog/photo-2-desktop.jpg" aria-label="посмотреть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.webp 1x, ./img/catalog/photo-2-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/photo-2-tablet.webp 1x, ./img/catalog/photo-2-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/photo-2-mobile.webp 1x, ./img/catalog/photo-2-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg 1x, ./img/catalog/photo-2-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/photo-2-tablet.jpg 1x, ./img/catalog/photo-2-tablet@2x.jpg 2x">
           <img class="photo__image" src="./img/catalog/photo-2-mobile.jpg" width="280" height="180" srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" alt="ударный музыкальный инструмент">
@@ -130,11 +146,15 @@
       </figure>
 
       <figure class="photo">
-        <a href="./img/catalog/photo-3-desktop.jpg">
+        <a href="./img/catalog/photo-3-desktop.jpg" aria-label="посмотреть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.webp 1x, ./img/catalog/photo-3-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/photo-3-tablet.webp 1x, ./img/catalog/photo-3-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/photo-3-mobile.webp 1x, ./img/catalog/photo-3-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg 1x, ./img/catalog/photo-3-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/photo-3-tablet.jpg 1x, ./img/catalog/photo-3-tablet@2x.jpg 2x">
-          <img class="photo__image" src="./img/catalog/photo-3-mobail.jpg" width="280" height="180" srcset="./img/catalog/photo-3-mobail@2x.jpg 2x" alt="фасад здания">
+          <img class="photo__image" src="./img/catalog/photo-3-mobile.jpg" width="280" height="180" srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" alt="фасад здания">
         </picture>
         </a>
         <figcaption class="photo__figcaption">
@@ -151,11 +171,15 @@
       </figure>
 
       <figure class="photo">
-        <a href="./img/catalog/photo-4-desktop.jpg">
+        <a href="./img/catalog/photo-4-desktop.jpg" aria-label="посмотреть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.webp 1x, ./img/catalog/photo-4-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/photo-4-tablet.webp 1x, ./img/catalog/photo-4-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/photo-4-mobile.webp 1x, ./img/catalog/photo-4-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg 1x, ./img/catalog/photo-4-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/photo-4-tablet.jpg 1x, ./img/catalog/photo-4-tablet@2x.jpg 2x">
-          <img class="photo__image" src="./img/catalog/photo-4-mobail.jpg" width="280" height="180" srcset="./img/catalog/photo-4-mobail@2x.jpg 2x" alt="оранжевая крыша на продуктовом рынке в виде купола">
+          <img class="photo__image" src="./img/catalog/photo-4-mobile.jpg" width="280" height="180" srcset="./img/catalog/photo-4-mobile@2x.jpg 2x" alt="оранжевая крыша на продуктовом рынке в виде купола">
         </picture>
         </a>
         <figcaption class="photo__figcaption">
@@ -172,11 +196,15 @@
       </figure>
 
       <figure class="photo">
-        <a href="./img/catalog/photo-5-desktop.jpg">
+        <a href="./img/catalog/photo-5-desktop.jpg" aria-label="посмотреть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-5-desktop.webp 1x, ./img/catalog/photo-5-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/photo-5-tablet.webp 1x, ./img/catalog/photo-5-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/photo-5-mobile.webp 1x, ./img/catalog/photo-5-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/photo-5-desktop.jpg 1x, ./img/catalog/photo-5-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/photo-5-tablet.jpg 1x, ./img/catalog/photo-5-tablet@2x.jpg 2x">
-          <img class="photo__image" src="./img/catalog/photo-5-mobail.jpg" width="280" height="180" srcset="./img/catalog/photo-5-mobail@2x.jpg 2x" alt="горы">
+          <img class="photo__image" src="./img/catalog/photo-5-mobile.jpg" width="280" height="180" srcset="./img/catalog/photo-5-mobile@2x.jpg 2x" alt="горы">
         </picture>
         </a>
         <figcaption class="photo__figcaption">
@@ -193,11 +221,15 @@
       </figure>
 
       <figure class="photo">
-        <a href="./img/catalog/photo-6-desktop.jpg">
+        <a href="./img/catalog/photo-6-desktop.jpg" aria-label="посмотреть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-6-desktop.webp 1x, ./img/catalog/photo-6-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/photo-6-tablet.webp 1x, ./img/catalog/photo-6-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/photo-6-mobile.webp 1x, ./img/catalog/photo-6-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/photo-6-desktop.jpg 1x, ./img/catalog/photo-6-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/photo-6-tablet.jpg 1x, ./img/catalog/photo-6-tablet@2x.jpg 2x">
-          <img class="photo__image" src="./img/catalog/photo-6-mobail.jpg" width="280" height="180" srcset="./img/catalog/photo-6-mobail@2x.jpg 2x" alt="вид из окна летящего самолета на закат">
+          <img class="photo__image" src="./img/catalog/photo-6-mobile.jpg" width="280" height="180" srcset="./img/catalog/photo-6-mobile@2x.jpg 2x" alt="вид из окна летящего самолета на закат">
         </picture>
         </a>
         <figcaption class="photo__figcaption">
@@ -221,43 +253,47 @@
       <h2 class="visually-hidden">Добавить новую фотографию</h2>
 
       <form class="upload-form container" action="https://echo.htmlacademy.ru" method="POST">
-        <a href="./img/catalog/winter-desktop.jpg">
+        <a href="./img/catalog/winter-desktop.jpg" aria-label="посмотреть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/winter-desktop.webp 1x, ./img/catalog/winter-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/catalog/winter-tablet.webp 1x, ./img/catalog/winter-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/catalog/winter-mobile.webp 1x, ./img/catalog/winter-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/catalog/winter-desktop.jpg 1x, ./img/catalog/winter-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/catalog/winter-tablet.jpg 1x, ./img/catalog/winter-tablet@2x.jpg 2x">
-          <img class="upload-form__image" src="./img/catalog/winter-mobail.jpg" width="280" height="374" srcset="./img/catalog/winter-mobail@2x.jpg 2x" alt="фото зимней дороги">
+          <img class="upload-form__image" src="./img/catalog/winter-mobile.jpg" width="280" height="374" srcset="./img/catalog/winter-mobile@2x.jpg 2x" alt="фото зимней дороги">
         </picture>
         </a>
           <div class="upload-form__inner">
             <div class="upload-form__wrap">
               <div class="upload-form__content">
-                <button class="upload-form__btn upload-form__btn--active" type="button">
+                <button class="upload-form__btn upload-form__btn--active" type="button" aria-label="изменить размер фото">
                   <svg class="upload-form__btn-crop" width="44" height="44">
                     <use xlink:href="img/sprite/sprite.svg#crop"></use>
                   </svg>
                 </button>
                 <div class="upload-form__range upload-form__range--active">
-                  <input class="upload-form__range-input upload-form__range-input--active" type="range" name="range" min="1" max="100" value="85">
+                  <input class="upload-form__range-input upload-form__range-input--active" type="range" name="range" id="crop" min="1" max="100" value="85" aria-label="изменить размер">
                 </div>
               </div>
               <div class="upload-form__content">
-                <button class="upload-form__btn" type="button">
+                <button class="upload-form__btn" type="button" aria-label="изменить насыщенность цвета">
                   <svg class="upload-form__btn-saturation" width="48" height="43">
                     <use xlink:href="img/sprite/sprite.svg#saturation"></use>
                   </svg>
                 </button>
                 <div class="upload-form__range">
-                  <input class="upload-form__range-input" type="range" name="range" min="1" max="100" value="14">
+                  <input class="upload-form__range-input" type="range" name="range" id="saturation" min="1" max="100" value="14" aria-label="изменить значение насыщенности">
                 </div>
               </div>
               <div class="upload-form__content">
-                <button class="upload-form__btn" type="button">
+                <button class="upload-form__btn" type="button" aria-label="изменить контрастность">
                   <svg class="upload-form__btn-contrast" width="32" height="32">
                     <use xlink:href="img/sprite/sprite.svg#contrast"></use>
                   </svg>
                 </button>
                 <div class="upload-form__range">
-                  <input class="upload-form__range-input" type="range" name="range" min="1" max="100" value="50">
+                  <input class="upload-form__range-input" type="range" name="range" id="contrast" min="1" max="100" value="50" aria-label="изменить значение контрастности">
                 </div>
               </div>
             </div>
@@ -271,7 +307,7 @@
     </section>
   </main>
   <footer class="footer container">
-    <a class="footer__logo" href="#">
+    <a class="footer__logo" href="index.html" aria-label="переход на главную страницу">
       <svg class="footer__logo-glass1200" width="61" height="40">
         <use xlink:href="img/sprite/sprite.svg#glass-desktop"></use>
       </svg>
@@ -287,21 +323,21 @@
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+        <a class="footer__social-link" href="https://twitter.com/" aria-label="мы в twitter">
           <svg width="18" height="14">
             <use xlink:href="img/sprite/sprite.svg#twitter"></use>
           </svg>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+        <a class="footer__social-link" href="https://www.facebook.com/" aria-label="мы в facebook">
           <svg width="9" height="18">
             <use xlink:href="img/sprite/sprite.svg#facebook"></use>
           </svg>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+        <a class="footer__social-link" href="https://www.youtube.com/" aria-label="мы в youtube">
           <svg width="15" height="13">
             <use xlink:href="img/sprite/sprite.svg#youtube"></use>
           </svg>
@@ -310,7 +346,7 @@
     </ul>
     <p class="footer__copyright">
       <span class="footer__copyright-text">Разработано</span>
-      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на сайт htmlacademy">
         <svg class="footer__copyright-svg" width="27" height="34">
           <use xlink:href="img/sprite/sprite.svg#html-academy"></use>
         </svg>

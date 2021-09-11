@@ -1,7 +1,10 @@
 const header = document.querySelector('.page-header');
 const navToggle = document.querySelector('.page-header__nav-toggle');
+const intro = document.querySelector('.intro');
+
 
 header.classList.remove('page-header--no-js');
+intro.classList.remove('intro--no-js');
 navToggle.addEventListener('click', function () {
   header.classList.toggle('is-open');
 });
