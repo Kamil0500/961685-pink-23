@@ -24,12 +24,15 @@
   position: relative;
   max-width: 534px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     &::before {
-      content: "";
-      position: absolute;
       background-image: url("../img/timer-tablet.png");
-      background-size: cover;
       width: 238px;
       height: 276px;
       bottom: -20px;
@@ -95,17 +98,9 @@
   }
 }
 
-.research__text br {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: block;
-  }
-}
-
 .research__link {
   color: @color-cerise;
-  display: block;
+  display: inline-flex;
   text-decoration-line: underline;
   font-size: 14px;
   line-height: 24px;

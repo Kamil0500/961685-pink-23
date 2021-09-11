@@ -1,25 +1,26 @@
 .accepted {
+  display: none;
   max-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   background: @color-default-white;
   box-shadow: 0 7px 15px rgb(@color-default-black, 0.15);
   border-radius: 1px;
-  position: absolute;
+  position: fixed;
   padding: 44px 0 0;
-  bottom: -50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 271%);
+  transform: translate(-50%, -50%);
 
   @media (min-width: @tablet-width) {
     max-width: 460px;
-    transform: translate(-50%, 195%);
+    transform: translate(-50%, -50%);
     padding-top: 42px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 780px;
-    transform: translate(-50%, 145%);
+    transform: translate(-50%, -50%);
     padding-top: 50px;
   }
 }
@@ -106,4 +107,8 @@
   @media (min-width: @desktop-width) {
     width: 460px;
   }
+}
+
+.accepted--open {
+  display: block;
 }
