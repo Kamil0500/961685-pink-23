@@ -74,7 +74,7 @@
   margin: 0 0 6px 23px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 19px 0 0;
+    margin: 0 18px 0 0;
     align-self: center;
   }
 }
@@ -100,7 +100,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 14px 18px 15px 18px;
+    padding: 16px 18px 14px 18px;
     width: 100%;
   }
 }
@@ -122,7 +122,7 @@
     grid-row: ~"3 / 4";
     order: 0;
     padding: 0;
-    margin: 0 0 5px;
+    margin: 0 0 4px;
   }
 }
 
@@ -137,7 +137,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 936px;
+    padding-bottom: 10px;
   }
 }
 
@@ -197,14 +197,14 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0 16px 0 92px;
+    padding: 0 16px 0 94px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 47px 0 0;
-    justify-content: space-evenly;
+    padding: 47px 8px 0 56px;
+    justify-content: space-between;
   }
 }
 
@@ -222,30 +222,25 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 28%;
-    margin-left: 50px;
+    width: 260px;
+  }
 
-    &:first-of-type {
-      order: -1;
-    }
+  &:first-child {
+    order: -1;
+  }
 
-    &:nth-child(2) {
-      order: 2;
-    }
+  &:nth-child(2),
+  &:nth-child(4) {
+    order: 2;
+  }
 
-    &:nth-child(4) {
-      order: 2;
-    }
+  &:nth-child(3),
+  &:nth-child(4) {
+    width: 241px;
+  }
 
-    &:nth-child(5) {
-      margin-left: 30px;
-    }
-
-    &:last-of-type {
-      margin-left: 30px;
-      margin-bottom: 60px;
-      order: 5;
-    }
+  &:nth-child(6) {
+    order: 5;
   }
 }
 
@@ -253,24 +248,26 @@
   padding-left: 25px;
   position: relative;
   cursor: pointer;
+  display: flex;
 
   &::before {
     content: "";
     position: absolute;
-    top: -6px;
+    top: -3px;
     left: -32px;
-    width: 37px;
-    height: 37px;
+    width: 38px;
+    height: 38px;
     border: 2px solid @color-whisper;
     background-color: @color-default-white;
 
     @media (min-width: @tablet-width) {
       left: -36px;
+      top: -6px;
     }
 
     @media (min-width: @desktop-width) {
       left: 0;
-      top: -7px;
+      top: -4px;
     }
   }
 
@@ -291,12 +288,18 @@
   }
 }
 
+.form-feedback__label-checkbox svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .form-feedback__input-checkbox:checked + .form-feedback__label-checkbox::before {
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: @color-default-white;
-  top: -6px;
+  top: -3px;
   left: -32px;
 
   @media (min-width: @tablet-width) {
@@ -306,7 +309,7 @@
 
   @media (min-width: @desktop-width) {
     left: 0;
-    top: -7px;
+    top: -4px;
   }
 }
 
@@ -335,15 +338,15 @@
     border: 2px solid @color-whisper;
     border-radius: 1px;
     padding: 32px 58px 0;
-    margin-bottom: 18px;
-    position: relative;
+    margin-bottom: 16px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 936px;
     display: flex;
-    justify-content: space-around;
-    padding: 0 19px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 56px;
     margin-bottom: 6px;
   }
 }
@@ -398,10 +401,10 @@
   text-transform: uppercase;
   display: block;
   max-width: max-content;
-  margin: 0 0 4px 23px;
+  margin: 0 0 5px 23px;
 
   @media (min-width: @tablet-width) {
-    margin: 8px 0 30px 18px;
+    margin: 8px 0 31px 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -444,8 +447,8 @@
     justify-content: center;
     position: absolute;
     background-color: @color-whisper;
-    top: 34px;
-    right: 59px;
+    top: 2px;
+    right: 2px;
     width: 59px;
     height: 59px;
     border: 0;
@@ -454,21 +457,19 @@
 
   @media (min-width: @desktop-width) {
     top: 30px;
-    left: 50%;
-    transform: translateX(-96px);
+    right: 2px;
   }
 }
 
 .form-feedback__contacts-btn--mail {
   @media (min-width: @tablet-width) {
-    top: 164px;
-    right: 59px;
+    top: 2px;
+    right: 2px;
   }
 
   @media (min-width: @desktop-width) {
     top: 30px;
-    left: 88%;
-    transform: translateX(-4px);
+    right: 2px;
   }
 }
 
@@ -591,6 +592,7 @@
   padding-left: 33px;
   position: relative;
   cursor: pointer;
+  display: flex;
 
   &::before {
     content: "";
@@ -599,6 +601,7 @@
     left: -37px;
     width: 40px;
     height: 40px;
+    background-color: @color-default-white;
     border: 2px solid @color-whisper;
     border-radius: 50%;
   }
@@ -615,7 +618,7 @@
     padding-left: 20px;
 
     &::before {
-      top: -8px;
+      top: -4px;
       left: -42px;
     }
   }
